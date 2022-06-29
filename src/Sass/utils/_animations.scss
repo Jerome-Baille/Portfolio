@@ -1,0 +1,37 @@
+// Apparition of the stacks list for the About page
+@keyframes apparition {
+    from {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0%);
+        opacity:100%;
+    }
+}
+
+// Apparition of the projects list for the Projects page
+@keyframes apparition-short {
+    from {
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0);
+        opacity:100%;
+    }
+}
+
+
+// Aparition of the waving hand for the About page
+@keyframes handWave {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1
+    }
+}

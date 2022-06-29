@@ -1,0 +1,27 @@
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+
+    @include container-s;
+    @include container-m;
+    @include container-l;
+    @include container-xl;
+
+  
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      margin: 0 auto;
+    }
+
+    .flat-button {
+      float: right;
+      margin-right: 10px;
+    }
+}

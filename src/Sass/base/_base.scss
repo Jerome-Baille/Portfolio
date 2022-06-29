@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 1.5rem;
+    color: $secondaryColor;
+    font-family: 'Coolvetica';
+    letter-spacing: 1px;
+    font-weight: 300;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    animation: pulse 1s;
+    text-align: justify;
+
+    &:last-of-type{
+      margin-bottom: 3rem;
+    }
+
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: 1.1s+$i*0.2s;
+      }
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Coolvetica";
+    color: $primaryColor;
+    font-weight: 400;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 40px;
+    width: fit-content;
+    text-align: start;
+
+    &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: $secondaryColor;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &:after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: $secondaryColor;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+
+      svg {
+        width: auto;
+        height: 45px;
+        margin-left: 20px;
+        animation: handWave 5s;
+      }
+}
+
+h2 {
+    font-family: 'Coolvetica';
+    letter-spacing: 1px;
+    color: $primaryColor;
+    font-size: 2.5rem;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+    animation: fadeIn 1s 1.8s backwards;
+    margin-top:0;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+
+    &:before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: $secondaryColor;
+        font-size: 14px;
+        position: absolute;
+        left: -10px;
+        top: -15px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &:after {
+        content: '<h2/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: $secondaryColor;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+}
+
+h3 {
+    font-size: 2rem;
+    margin:0;
+    font-family: 'Coolvetica';
+    letter-spacing: 1px;
+    color: $primaryColor;
+}
+
+.mr0 {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+input,
+textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}

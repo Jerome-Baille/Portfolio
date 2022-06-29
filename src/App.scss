@@ -1,0 +1,28 @@
+// utils
+@import './Sass/utils/colors';
+@import './Sass/utils/animations';
+@import 'animate.css';
+@import './Sass/utils/effects';
+@import './Sass/utils/mixins';
+
+// Base
+@import './Sass/base/base';
+@import './Sass/base/typography';
+
+// Components
+@import '~loaders.css/src/animations/pacman.scss';
+@import './Sass/component/loader';
+@import './Sass/component/buttons';
+@import './Sass/component/forms';
+@import './Sass/component/cards';
+
+// layout
+@import './Sass/layout/containers';
+@import './Sass/layout/sidebar';
+
+// Pages
+@import './Sass/pages/about';
+@import './Sass/pages/contact';
+@import './Sass/pages/singleProject';
+@import './Sass/pages/home';
+@import './Sass/pages/projects';

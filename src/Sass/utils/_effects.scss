@@ -1,0 +1,42 @@
+.Typewriter__wrapper {
+    color: $secondaryColor;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+}
+
+.particles {
+    position: fixed;
+    z-index: -1;
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+  
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: $secondaryColor;
+    }
+}
+
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {
+        animation-delay: #{calc($i / 10)}s;
+    }
+}
+  

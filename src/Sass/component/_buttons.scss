@@ -1,0 +1,37 @@
+.flat-button {
+    color: $secondaryColor;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: 'Coolvetica';
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid $primaryColor;
+    margin-top: 25px;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $backgroundColor;
+      cursor: pointer;
+    }
+
+    &.back-right {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &.back-left {
+      float: right;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+}

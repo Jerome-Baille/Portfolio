@@ -1,0 +1,41 @@
+.home-page {
+    margin-top: 0 !important;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+
+    .text-zone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+
+        @media screen and (min-width: 768px) {
+          scroll-snap-align: start;
+        }
+    }
+
+    .main-text, .main-btn {
+      margin: 0 auto;
+    }
+    
+    .main-text {
+      height: calc( 100vh - 100px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        padding: 0 2rem;
+      }
+    }
+    
+    .main-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }  
+}

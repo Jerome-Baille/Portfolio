@@ -1,0 +1,24 @@
+@mixin container-s {
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem;
+        max-width: 800px;
+    }
+}
+@mixin container-m {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        max-width: 660px;
+        padding: 0;
+    }
+}
+@mixin container-l {
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+        max-width: 800px;
+        padding: 0;
+    }
+}
+@mixin container-xl {
+    @media screen and (min-width: 1201px) {
+        max-width: 960px;
+        padding: 0;
+    }
+}
