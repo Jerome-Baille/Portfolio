@@ -1,22 +1,22 @@
 {
     "Projects": {
-        "Booki" : {
-            "logo": "/Projects/Booki/booki-logo.png",
+        "PhoceaTravel" : {
+            "logo": "/Projects/PhoceaTravel/phocea-travel-logo.png",
             "pictures": [
                 {
-                    "url": "/Projects/Booki/booki-desktop.png",
+                    "url": "/Projects/PhoceaTravel/phocea-travel-desktop.png",
                     "alt": "Desktop Template"
                 },
                 {
-                    "url": "/Projects/Booki/booki-mobile.png",
+                    "url": "/Projects/PhoceaTravel/phocea-travel-mobile.png",
                     "caption": "Mobile Template"
                 }
             ],
-            "id": "Booki",
-            "name": "Booki",
+            "id": "PhoceaTravel",
+            "name": "Phocéa Travel",
             "subtitle": "Responsive website for a travel agency",
             "descriptions" : [
-                "Booki is a small company offering a vacation planning tool!",
+                "Phocéa Travel is a small company offering a vacation planning tool!",
                 "Its website allows users to find accommodations and activities in the city of their choice.",
                 "Accommodations can also be filtered by theme, such as budget or ambiance."
             ],
@@ -26,24 +26,23 @@
             ],
             "stack": [
                 {
-                    "name": "HTML 5",
-                    "url": "/Stack/html5.svg"
+                    "name": "React",
+                    "url": "/Stack/react.svg"
                 },
                 {
-                    "name": "CSS 3",
-                    "url": "/Stack/css3.svg"
+                    "name": "Sass",
+                    "url": "/Stack/sass.svg"
                 }
             ],
             "improvements": [
                 "Make the search bar functional",
                 "Add a database to turn the static website into a modern dynamic app",
                 "Link the website to google maps API to show the location of the accommodations",
-                "Add a login system to allow users to book accommodations",
-                "Add a contact form to allow users to contact the company"
+                "Add a login system to allow users to book accommodations"
             ],
-            "tags": "#HTML5  #CSS3",
-            "github": "https://github.com/Jerome-Baille/JeromeBAILLE_19112021",
-            "demo": "https://jerome-baille.github.io/JeromeBAILLE_19112021/"
+            "tags": "#React #HTML5  #CSS3 #Sass",
+            "github": "https://github.com/Jerome-Baille/phocea-travel",
+            "demo": "https://jerome-baille.github.io/phocea-travel/"
         },
         "OhMyFood" : {
             "logo": "/Projects/OhMyFood/ohMyFood-logo.png",
