@@ -47,8 +47,6 @@ return (
                         <div className="pen" key={index}>
                             <div className='penContainer'>
                             <iframe 
-                                height="400" 
-                                width="400"
                                 scrolling="no" 
                                 title={hundredDays[hundredDay].title} 
                                 src={`${hundredDays[hundredDay].src}?default-tab=result&theme-id=light`} 
