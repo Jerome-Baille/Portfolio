@@ -14,7 +14,7 @@
 .container {
     width: 100%;
     will-change: contents;
-    height: 100%;
+    height: auto;
     opacity: 0;
     margin: 0 auto;
     z-index: 1;
@@ -24,7 +24,7 @@
 }
 
 .projects-page {
-    height: 100vh !important;
+    min-height: 100vh !important;
   
     @media screen and (min-width: 768px) {
       scroll-snap-align: start;
@@ -127,6 +127,4 @@
             margin: auto;
         }
     }
-
-
 }

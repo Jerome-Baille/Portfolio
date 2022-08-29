@@ -5,24 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
 
+import { getAllProjects } from '../../services/service';
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        const urls = [
-            "https://jerome-baille-portfolio.herokuapp.com/api/projects"
-          ];
-    
-        const getData = async () => {
-          const [projects] = await Promise.all(
-            urls.map((url) => fetch(url)
-              .then((res) => res.json()))
-         );
-         setProjects(projects);
-        };
-    
-        getData();
+        getAllProjects().then(data => {
+            setProjects(data)
+        }).catch(err => {
+            console.log(err)
+        })
       }, [])
 
     const [letterClass, setLetterClass] = useState('text-animate');

@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import Typewriter from "typewriter-effect";
 import Projects from '../Projects';
 import Loader from 'react-loaders';
+import Blog from '../Blog';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -65,6 +66,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Blog />
             <Projects />
         </div> 
         <Loader type="pacman"/>

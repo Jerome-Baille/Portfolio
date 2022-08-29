@@ -22,6 +22,11 @@
       cursor: pointer;
     }
 
+    &.filter-active{
+      background-color: $secondaryColor;
+      color: $backgroundColor;
+    }
+
     &.back-right {
       @media screen and (max-width: 768px) {
         display: none;

@@ -5,26 +5,24 @@ import AnimatedLetters from '../AnimatedLetters'
 import ProfilePicture from '../../assets/images/about/DSC_0703_2.JPG'
 import Signature from '../../assets/images/about/Signature.png'
 
+import { getAbout, getStack } from '../../services/service';
+
 const About = () => {
   const [about, setAbout] = useState([])
   const [stack, setStack] = useState([])
 
   useEffect(() => {
-    const urls = [
-        "https://jerome-baille-portfolio.herokuapp.com/api/about",    
-        "https://jerome-baille-portfolio.herokuapp.com/api/stacks",
-      ];
+    getAbout().then(data => {
+        setAbout(data)
+    }).catch(err => {
+        console.log(err)
+    })
 
-    const getData = async () => {
-      const [about, stack] = await Promise.all(
-        urls.map((url) => fetch(url)
-          .then((res) => res.json()))
-     );
-      setAbout(about);
-      setStack(stack);
-    };
-
-    getData();
+    getStack().then(data => {
+        setStack(data)
+    }).catch(err => {
+        console.log(err)
+    })
   }, [])
 
 
@@ -62,12 +60,13 @@ const About = () => {
                     </g>
                   </svg>
                 </h1>
-                <div id="description"></div>
-                {about[0].description.map((description, index) => (
-                  <p key={index}>
-                    {description}
-                  </p>
-                ))}
+                <div id="description">
+                  {about[0].description.map((description, index) => (
+                    <p key={index}>
+                      {description}
+                    </p>
+                  ))}
+                </div>
                 <div className='signature-container'>
                   <img src={Signature} alt="Signature"/>
                 </div>

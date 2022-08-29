@@ -1,0 +1,36 @@
+.blog-section{
+    padding-bottom: 50px;
+
+    & .filter-btn {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    & .blog-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        & .blog-container {
+            grid-template-columns: repeat(2, 1fr);
+
+            & .card-training {
+                grid-column: span 2;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        & .blog-container {
+            grid-template-columns: 1fr;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import JBLogo from '../../assets/images/JB-logo2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
@@ -18,6 +18,9 @@ const Sidebar = () => (
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="projects-link" to='/projects' aria-label="Go to projects page">
                 <FontAwesomeIcon icon={faBriefcase}/>
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="blog-link" to='/blog' aria-label="Go to blog page">
+                <FontAwesomeIcon icon={faHourglassHalf}/>
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact' aria-label="Go to contact page">
                 <FontAwesomeIcon icon={faEnvelope}/>

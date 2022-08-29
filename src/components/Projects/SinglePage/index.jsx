@@ -6,30 +6,21 @@ import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Loader from "react-loaders";
 
+import { getOneProject } from '../../../services/service';
+
 const ProjectSinglePage = () => {
-    const [projects, setProjects] = useState([])
-  
-    useEffect(() => {
-      const urls = [
-          "https://jerome-baille-portfolio.herokuapp.com/api/projects"
-        ];
-  
-      const getData = async () => {
-        const [projects] = await Promise.all(
-          urls.map((url) => fetch(url)
-            .then((res) => res.json()))
-       );
-        setProjects(projects);
-      };
-  
-      getData();
-    }, [])
-
-
-    const { id } = useParams()
     const navigate = useNavigate();
-
+    const { id } = useParams()
+    const [project, setProject] = useState([])
     const [letterClass, setLetterClass] = useState('text-animate');
+
+    useEffect(() => {
+        getOneProject(id).then(data => {
+            setProject(data)
+        }).catch(err => {
+            console.log(err)
+        })
+    }, [id])
 
     useEffect(() => {
         setTimeout(() => {
@@ -37,7 +28,7 @@ const ProjectSinglePage = () => {
         }, 4000)
     }, [])
 
-    if(projects.length !== 0) {
+    if(project.length !== 0) {
         return (
             <>
             <div className="container">
@@ -50,14 +41,14 @@ const ProjectSinglePage = () => {
                         <h1>
                             <AnimatedLetters
                                 letterClass={letterClass}
-                                strArray={Object.values(projects[id].name)}
+                                strArray={Object.values(project.name)}
                                 idx={15}
                             />
                         </h1> 
                         <div className="subtitle">
-                            <h2>{projects[id].subtitle}</h2>
+                            <h2>{project.subtitle}</h2>
                         </div>
-                        {projects[id].descriptions.map((description, index) => (
+                        {project.descriptions.map((description, index) => (
                             <p key={index}>
                                 {description}
                             </p>
@@ -69,7 +60,7 @@ const ProjectSinglePage = () => {
                             </h3>
 
                             <ul>
-                                {projects[id].skills.map((skill, index) => (
+                                {project.skills.map((skill, index) => (
                                     <li key={index}>
                                         {skill}
                                     </li>
@@ -82,7 +73,7 @@ const ProjectSinglePage = () => {
                                 Stack Used
                             </h3>
                             <div className="stack-container">
-                                {projects[id].stack.map((stack, index) => (
+                                {project.stack.map((stack, index) => (
                                     <div className="stack-single" key={index}>
                                         <img src={process.env.PUBLIC_URL + stack.url} alt={stack.name} />                            
                                         <span>{stack.name}</span>
@@ -95,7 +86,7 @@ const ProjectSinglePage = () => {
                                 Possible areas of improvement
                             </h3>
                             <ul>
-                                {projects[id].improvements.map((improvement, id) => (
+                                {project.improvements.map((improvement, id) => (
                                     <li key={id}>
                                         {improvement}
                                     </li>
@@ -108,17 +99,17 @@ const ProjectSinglePage = () => {
                             <FontAwesomeIcon icon={faArrowLeft} />
                             <span> Back</span>
                         </button>
-                        {projects[id].pictures.map((picture, index) => (
+                        {project.pictures.map((picture, index) => (
                             <div className="img-wraper" key={index}>
                                 <img src={process.env.PUBLIC_URL + picture.url} alt={picture.alt}/>
                             </div>
                         ))}
 
                         <footer>
-                            <a href={projects[id].github} target="_blank" rel="noopener noreferrer" className="github-link">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                            {projects[id].demo? <a href={projects[id].demo} target="_blank" rel="noopener noreferrer" className="demo-link">
+                            {project.demo? <a href={project.demo} target="_blank" rel="noopener noreferrer" className="demo-link">
                                 <FontAwesomeIcon icon={faInternetExplorer} />
                             </a> : null}
                         </footer>
