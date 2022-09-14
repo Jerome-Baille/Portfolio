@@ -5,13 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarCheck, faCircleCheck, faFlask, faGraduationCap, faHourglassHalf, faMedal } from '@fortawesome/free-solid-svg-icons';
 import { getCertifications, getChallenges } from '../../services/service';
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 
 
 const Blog = () => {
     const [certifications, setCertifications] = useState([])
     const [challenges, setChallenges] = useState([])
-    const [trainings, setTrainings] = useState([])
+    // const [trainings, setTrainings] = useState([])
     const [letterClass, setLetterClass] = useState('text-animate');
 
     useEffect(() => {
@@ -30,6 +29,12 @@ const Blog = () => {
         }).catch(err => {
             console.log(err)
         })
+
+        // getTrainings().then(data => {
+        //     setTrainings(data)
+        // }).catch(err => {
+        //     console.log(err)
+        // })
       }, [])
 
     function handleClick(e) {
@@ -82,6 +87,12 @@ const Blog = () => {
                         to="/blog/challenges/HundredDaysChallenge" 
                         className='flat-button card-challenge__int-link'
                     >My contributions</Link>
+        }
+        if(input === 'job visualiser') {
+            return <Link 
+                        to="/blog/trainings/job-visualiser" 
+                        className='flat-button card-challenge__int-link'
+                    >See More</Link>
         }
     }
 
@@ -191,7 +202,20 @@ const Blog = () => {
                             <FontAwesomeIcon icon={faFlask} />
                             <span>Training</span>
                         </div>
-                        {trainings.length !== 0 ?
+                        <div className="card-body">
+                            <div className="card-challenge">
+                                <span className="card-challenge__title">
+                                    Job visualiser
+                                </span>
+                                <span className="card-challenge__description">
+                                    A 3 parts application that allows you to keep track of your job applications.
+                                </span>
+                                <span className="card-challenge__description">
+                                    #React #Bootstrap #Azure #MongoDB #NodeJS #ExpressJS #RESTfulAPI
+                                </span>
+                                {getContributions("job visualiser")}
+                            </div>
+                        {/* {trainings.length !== 0 ?
                         <div className="card-body">
                             <ul>
                                 <li>Project 1</li>
@@ -199,7 +223,9 @@ const Blog = () => {
                                 <li>Project 3</li>
                             </ul>
                         </div>
-                        : <div className="card-body"><h3 className='no-data'>No data found</h3></div>}
+                        : <div className="card-body"><h3 className='no-data'>No data found</h3></div>
+                        } */}
+                        </div>
                     </div>
                 </section>
                     

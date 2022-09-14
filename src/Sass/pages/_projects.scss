@@ -27,6 +27,64 @@
         object-fit: contain;
     }
 
+    &__body{
+        font-size: 1.5rem;
+        color: #5ba7d1;
+        font-family: "Coolvetica";
+        letter-spacing: 1px;
+        font-weight: 300;
+        max-width: 100%;
+        animation: pulse 1s;
+        text-align: justify;
+
+        @media screen and (max-width: 768px) {
+            padding: 0 2rem;
+        }
+
+        .div-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        & img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        & figure{
+            border: thin #c0c0c0 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            margin: auto;
+            height: auto;
+            margin-bottom: 3rem;
+            row-gap: 1rem;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+            
+            figcaption {
+                background-color: $primaryColor;
+                color: #fff;
+                font: italic smaller sans-serif;
+                padding: 3px;
+                text-align: center;
+            }
+        }
+
+
+    }
+
     .projects-wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

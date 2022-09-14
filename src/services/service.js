@@ -63,3 +63,12 @@ export async function getHundredDaysOfCSS() {
  );
   return DaysOfCSS;
 };
+
+export async function getTrainings() {
+  const urlTrainings = [`${baseURL}trainings`];
+  const [trainings] = await Promise.all(
+    urlTrainings.map((url) => fetch(url)
+      .then((res) => res.json()))
+ );
+  return trainings;
+};
