@@ -27,15 +27,10 @@ return (
                     <p>
                         Job Visualiser is a 3 parts web application that helps users to visualise their job search process. It helps users to track their job search process and helps them to visualise their progress. 
                     </p>
-                    <figure>
-                        <img 
-                            src="/Portfolio/Projects/JobVisualiser/job-visualiser-schema.png" 
-                            alt="Schema of the Job Visualiser App" 
-                        />
-                        <figcaption>
-                            Schema of the Job Visualiser App
-                        </figcaption>
-                    </figure>
+                    <img 
+                        src="/Projects/JobVisualiser/job-visualiser-schema.png"
+                        alt="Schema of the Job Visualiser App" 
+                    />
                     <div>
                         <h2>
                             The Google Chrome Extension
@@ -48,7 +43,7 @@ return (
                                 loop 
                                 muted
                             >
-                                <source src="/Portfolio/Projects/JobVisualiser/job-application-tracker.webm" type="video/webm"/>
+                                <source src="/Projects/JobVisualiser/job-application-tracker.webm" type="video/webm"/>
                             </video>
                         </div>
                         <p>
@@ -83,7 +78,7 @@ return (
                             The Dashboard
                         </h2>
                         <div>
-                            <img src="/Portfolio/Projects/JobVisualiser/mockup-1.png" alt="logo react." />
+                            <img src="/Projects/JobVisualiser/mockup-1.png" alt="Mockup of the dashboard on three different devices." />
                         </div>
                         <p>
                         A dashboard that displays the jobs added by the user. The dashboard displays the jobs in a timeline and allows the user to filter the jobs by type of job (remote, hybrid or on site) and by status (approved, rejected, pending or unknown).
@@ -95,13 +90,13 @@ return (
                         The dashboard allows the user to modify (eg. to add an interview date, or modify the status of the job application) or delete any job application.
                         </p>
                         <div>
-                            <img src="/Portfolio/Projects/JobVisualiser/mockup-2.png" alt="logo react." />
+                            <img src="/Projects/JobVisualiser/mockup-2.png" alt="Manual add of a job opportunity on mobile." />
                         </div>
                         <p>
                         The dashboard also displays the list of job boards used by the user. So that the user can easily access the job boards and apply for jobs.
                         </p>
                         <div>
-                            <img src="/Portfolio/Projects/JobVisualiser/mockup-3.png" alt="logo react." />
+                            <img src="/Projects/JobVisualiser/mockup-3.png" alt="Main dashboard on mobile." />
                         </div>
                         <p>
                             The dashboard is written in React with the Bootstrap library. It uses React-Google-Chart to display the pie chart.

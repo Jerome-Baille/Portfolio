@@ -1,4 +1,5 @@
-const baseURL = 'https://backend-portfolio.onrender.com/api/';
+// const baseURL = 'https://backend-portfolio.onrender.com/api/';
+const baseURL = 'https://jerome-baille.fr/api/';
 
 export async function getAbout() {
   const urlAbout = [`${baseURL}about`];
