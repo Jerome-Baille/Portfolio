@@ -7,7 +7,6 @@
     right: 0;
     height: 100%;
     position: absolute;
-    padding-top: 100px;
     overflow: auto;
 
     @media screen and (max-width: 768px) {
@@ -17,6 +16,7 @@
 
 .container {
     width: 100%;
+    padding-top: 100px;
     will-change: contents;
     height: auto;
     opacity: 0;
