@@ -33,11 +33,11 @@ const ProjectSinglePage = () => {
             <>
             <div className="container">
                 <section className="single-project">
+                    <button onClick={() =>navigate(-1)} className='flat-button mr0 back-left'>
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                        <span> Back</span>
+                    </button>
                     <div className="text-column">
-                        <button onClick={() =>navigate(-1)} className='flat-button mr0 back-left'>
-                            <FontAwesomeIcon icon={faArrowLeft} />
-                            <span> Back</span>
-                        </button>
                         <h1>
                             <AnimatedLetters
                                 letterClass={letterClass}
