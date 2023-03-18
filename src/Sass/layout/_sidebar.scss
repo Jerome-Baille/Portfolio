@@ -24,13 +24,22 @@
 
       &__container {
         padding-top: 25px;
+        padding-bottom: 25px;
         background-color: $primaryColor;
         color: white;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       &__list {
         padding-left: 15px !important;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
       }
     }
   

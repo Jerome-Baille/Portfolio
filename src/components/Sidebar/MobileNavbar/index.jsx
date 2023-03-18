@@ -41,12 +41,6 @@ const MobileNavbar = () => {
       className='navbar--mobile__container'
     >
       <List
-            sx={{
-              width: 150,
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between'
-            }}
             className='navbar--mobile__list'
       >
         {links.map((link, index) => (
@@ -62,25 +56,27 @@ const MobileNavbar = () => {
           </NavLink>
         ))}
       </List>
-      <Divider />
-      <List
-        className='navbar--mobile__list'
-      >
-        {externalLinks.map((link, index) => (
-          <a
-            key={index}
-            href={link.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', color: 'inherit' }}
-          >
-            <ListItemText 
-              primaryTypographyProps={{ fontSize: '1.5rem' }}
-              primary={link.title} 
-              />
-          </a>
-        ))}
-      </List>
+      <div>
+        <Divider />
+        <List
+          className='navbar--mobile__list'
+        >
+          {externalLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <ListItemText 
+                primaryTypographyProps={{ fontSize: '1.5rem' }}
+                primary={link.title} 
+                />
+            </a>
+          ))}
+        </List>
+      </div>
     </div>
   );
 
