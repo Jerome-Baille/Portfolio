@@ -1,4 +1,4 @@
-.nav-bar {
+.navbar {
     background: $primaryColor;
     width: 60px;
     height: 100%;
@@ -6,6 +6,33 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+
+    &--mobile{
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        margin-left: 25px;
+      }
+
+      &__icon {
+        margin-top: 25px !important;
+        margin-left: 25px !important;
+        color: $primaryColor !important;
+        z-index: 5;
+      }
+
+      &__container {
+        padding-top: 25px;
+        background-color: $primaryColor;
+        color: white;
+        height: 100vh;
+      }
+
+      &__list {
+        padding-left: 15px !important;
+      }
+    }
   
     .logo {
       img {
