@@ -1,10 +1,10 @@
 // const baseURL = 'https://backend-portfolio.onrender.com/api/';
-// const baseURL = 'https://jerome-baille.fr/api/';
-const baseURL = 'http://localhost:3000/api/';
+const baseURL = 'https://jerome-baille.fr/api/';
+// const baseURL = 'http://localhost:3000/api/';
 
 
-export async function getAbout() {
-  const urlAbout = `${baseURL}about`;
+export async function getAbout(lang) {
+  const urlAbout = `${baseURL}about/${lang}`;
   const about = await fetch(urlAbout).then((res) => res.json());
   return about;
 }
@@ -27,14 +27,16 @@ export async function getOneProject(id) {
   return project;
 }
 
-export async function getCertifications() {
-  const urlCertifications = `${baseURL}certifications`;
+export async function getCertifications(query) {
+  let queryParam = (query && query!=='All') ? `?status=${query}` :  '';
+  const urlCertifications = `${baseURL}certifications${queryParam}`;
   const certifications = await fetch(urlCertifications).then((res) => res.json());
   return certifications;
 }
 
-export async function getChallenges() {
-  const urlChallenges = `${baseURL}challenges`;
+export async function getChallenges(query) {
+  let queryParam = (query && query!=='All') ? `?status=${query}` :  '';
+  const urlChallenges = `${baseURL}challenges${queryParam}`;
   const challenges = await fetch(urlChallenges).then((res) => res.json());
   return challenges;
 }

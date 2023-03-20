@@ -17,6 +17,7 @@ p {
     max-width: fit-content;
     animation: pulse 1s;
     text-align: justify;
+    white-space: pre-wrap;
 
     &:last-of-type{
       margin-bottom: 3rem;

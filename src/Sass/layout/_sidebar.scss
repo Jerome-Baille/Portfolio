@@ -98,17 +98,27 @@
           -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
         }
-  
-        &:first-child {
-          &:after {
-            content: 'HOME';
-          }
+      }
+
+      a.home-link--en {
+        &:after {
+          content: 'HOME';
+        }
+      }
+      a.home-link--fr {
+        &:after {
+          content: 'ACCUEIL';
         }
       }
   
-      a.about-link {
+      a.about-link--en {
         &:after {
           content: 'ABOUT';
+        }
+      }
+      a.about-link--fr {
+        &:after {
+          content: 'A PROPOS';
         }
       }
   
@@ -118,9 +128,14 @@
         }
       }
   
-      a.projects-link {
+      a.projects-link--en {
         &:after {
           content: 'PROJECTS';
+        }
+      }
+      a.projects-link--fr {
+        &:after {
+          content: 'PROJETS';
         }
       }
 

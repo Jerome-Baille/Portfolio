@@ -4,24 +4,53 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import CVen from '../../../assets/pdf/EN/Jerome BAILLE - Frontend Developer.pdf';
+import CVfr from '../../../assets/pdf/FR/Jérôme BAILLE - Développeur Frontend.pdf';
+import { useContext } from 'react';
+import { LanguageContext } from '../../Layout';
 
 function DesktopNavbar() {
+    const { language } = useContext(LanguageContext);
+
     return (
         <div className="navbar">
             <Link className='logo' to='/'>
                 <img src={JBLogo} alt="Jerome Baille logo" />
             </Link>
             <nav>
-                <NavLink exact="true" activeclassname="active" to='/' aria-label="Go to homepage">
+                <NavLink 
+                    exact="true" 
+                    activeclassname="active" 
+                    className={language==='fr' ? 'home-link--fr' : 'home-link--en'}
+                    to='/' 
+                    aria-label="Go to homepage"
+                >
                     <FontAwesomeIcon icon={faHome}/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to='/about' aria-label="Go to about page">
+                <NavLink 
+                    exact="true" 
+                    activeclassname="active" 
+                    className={language==='fr' ? 'about-link--fr' : 'about-link--en'} 
+                    to='/about' 
+                    aria-label="Go to about page" 
+                >
                     <FontAwesomeIcon icon={faUser}/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="projects-link" to='/projects' aria-label="Go to projects page">
+                <NavLink 
+                    exact="true" 
+                    activeclassname="active" 
+                    className={language==='fr' ? 'projects-link--fr' : 'projects-link--en'} 
+                    to='/projects' 
+                    aria-label="Go to projects page"
+                >
                     <FontAwesomeIcon icon={faBriefcase}/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="blog-link" to='/blog' aria-label="Go to blog page">
+                <NavLink 
+                    exact="true" 
+                    activeclassname="active" 
+                    className="blog-link" 
+                    to='/blog' 
+                    aria-label="Go to blog page"
+                >
                     <FontAwesomeIcon icon={faHourglassHalf}/>
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact' aria-label="Go to contact page">
@@ -30,7 +59,14 @@ function DesktopNavbar() {
             </nav>
             <ul>
                 <li>
-                    <a href={CVen} className="resume-link" target="_blank" rel="noreferrer" aria-label="Get Jerome Baille resume" download>
+                    <a 
+                        href={language==='fr' ? CVfr : CVen} 
+                        className="resume-link" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        aria-label={language==='fr' ? 'CV de Jerome BAILLE' : 'Get Jerome Baille resume'} 
+                        download
+                    >
                         <FontAwesomeIcon icon={faFilePdf} />
                     </a>
                 </li>
