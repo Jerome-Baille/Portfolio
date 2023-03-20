@@ -136,7 +136,7 @@ const Blog = () => {
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={page.title}
-                            idx={15}
+                            idx={10}
                         />
                     </h1> 
                     <p>
