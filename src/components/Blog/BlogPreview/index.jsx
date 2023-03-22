@@ -1,28 +1,27 @@
 import { useEffect, useState, useContext } from 'react';
 import AnimatedLetters from '../../AnimatedLetters';
 import Loader from "react-loaders";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarCheck, faCircleCheck, faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
-import { getCertifications } from '../../../services/service';
+import { getCertifications, getChallenges } from '../../../services/service';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../Layout';
 
-import AccordionComponent from './AccordionComponent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarCheck, faCircleCheck, faFlask, faGraduationCap, faHourglassHalf, faMedal } from '@fortawesome/free-solid-svg-icons';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const BlogPreview = () => {
     const { language } = useContext(LanguageContext);
     const [certifications, setCertifications] = useState([])
+    const [challenges, setChallenges] = useState([])
     const [letterClass, setLetterClass] = useState('text-animate');
     const [page, setPage] = useState({});
-
-    function setLanguage(props) {
-        if(language === 'fr') {
-            return props.fr
-        } else {
-            return props.en
-        }
-    }
+    const [expanded, setExpanded] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
 
     useEffect(() => {
         const En = {
@@ -73,7 +72,10 @@ const BlogPreview = () => {
             try {
                 const certifications = await getCertifications();
                 setCertifications(certifications)
-                
+
+                const challenges = await getChallenges();
+                setChallenges(challenges)
+
                 language === 'fr' ? setPage(Fr) : setPage(En);
             } catch (error) {
                 console.log(error)
@@ -88,34 +90,199 @@ const BlogPreview = () => {
           }, 4000)
       }, [language])
 
-    function iconStatus(status) {
-        if(status === 'Completed') {
-            return <FontAwesomeIcon icon={faCircleCheck} className="completed" />
+      function setLanguage(props) {
+            if(language === 'fr') {
+                return props.fr
+            } else {
+                return props.en
+            }
         }
-        if(status === 'Active') {
-            return <FontAwesomeIcon icon={faHourglassHalf} className="active" />
-        }
-        if(status === 'Planned') {
-            return <FontAwesomeIcon icon={faCalendarCheck} className="planned" />
-        }
-    }
 
-    if(certifications && page.title){
+        const handleAccordionChange = (panel) => (event, newExpanded) => {
+            setExpanded(newExpanded ? panel : false);
+    
+            // if at least one panel is expanded, isHidden is set to true
+            if(newExpanded) {
+                setIsHidden(true);
+            } else {
+                setIsHidden(false);
+            }
+        };
+
+        function iconStatus(status) {
+            if(status === 'Completed') {
+                return <FontAwesomeIcon icon={faCircleCheck} className="completed" />
+            }
+            if(status === 'Active') {
+                return <FontAwesomeIcon icon={faHourglassHalf} className="active" />
+            }
+            if(status === 'Planned') {
+                return <FontAwesomeIcon icon={faCalendarCheck} className="planned" />
+            }
+        }
+
+    if(page.title){
         return (
             <div className="container projects-page">
                 <section className="project-section blog-section">
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={page.title}
-                            idx={10}
-                        />
-                    </h1> 
-                    <p>
-                        {page.subtitle}
-                    </p>
+                    
+                    {!isHidden?
+                        <>
+                            <h1>
+                                <AnimatedLetters
+                                    letterClass={letterClass}
+                                    strArray={page.title}
+                                    idx={10}
+                                />
+                            </h1> 
+                            <p>
+                                {page.subtitle}
+                            </p>
+                        </>
+                    : null}
 
-                    <AccordionComponent/>
+                    <div className='accordion__main-container'>
+                        <Accordion
+                            expanded={expanded === 'panel-certification'}
+                            onChange={handleAccordionChange('panel-certification')}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon className='accordion__expand' />}
+                                aria-controls="panel-certification"
+                                id="panel-certification"
+                                className='accordion__summary accordion__certification'
+                            >
+                                <FontAwesomeIcon icon={faGraduationCap} />
+                                <span>
+                                    {page.certificationTitle}
+                                </span>
+                            </AccordionSummary>
+                            <AccordionDetails className='accordion__details'>
+                                <section className='card card--accordion'>
+                                            {certifications.length !== 0 ? 
+                                    <div className='card-body accordion__card'>
+                                        {Object.keys(certifications).map((certification, index) => (
+                                            <a 
+                                                key={index} 
+                                                href={certifications[certification].url} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer" 
+                                                className="card-certification" 
+                                                aria-label={`Go to ${setLanguage(certifications[certification].name)} certification page`}
+                                            >
+                                                <header>
+                                                    <img src={process.env.PUBLIC_URL + certifications[certification].img} alt={`${setLanguage(certifications[certification].name)} by ${certifications[certification].author}`} />
+                                                    <span className='card-certification__author'>{certifications[certification].author}</span>
+                                                </header>
+                                                <div className='card-certification__content'>
+                                                    <span className="card-certification__name">{setLanguage(certifications[certification].name)}</span>
+                                                    <span className="card-certification__type">[{setLanguage(certifications[certification].type)}] </span>
+                                                </div>
+                                                {iconStatus(certifications[certification].status)}                                    
+                                            </a>
+                                        ))}
+                                    </div>
+                                : <div className="card-body"><h3 className='no-data'>{page.noData}</h3></div>
+                                }
+                                </section>
+
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel-challenge'}
+                            onChange={handleAccordionChange('panel-challenge')}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon className='accordion__expand' />}
+                                aria-controls="panel-challenge"
+                                id="panel-challenge"
+                                className='accordion__summary accordion__challenge'
+                            >
+                                <FontAwesomeIcon icon={faMedal} />  
+                                <span>
+                                    {page.challengeTitle}
+                                </span>
+                            </AccordionSummary>
+                            <AccordionDetails className='accordion__details'>
+                                <section className='card card--accordion'>
+                                            {challenges.length !== 0 ? 
+                                    <div className='card-body accordion__card'>
+                                        {Object.keys(challenges).map((challenge, index) => (
+                                            <div key={index} className="card-challenge">
+                                                <a 
+                                                    href={`${challenges[challenge].url}`} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer" 
+                                                    className="card-challenge__ext-link" 
+                                                    aria-label={`Go to ${setLanguage(certifications[challenge].name)} challenge page`}
+                                                />
+                                                <span className="card-challenge__title">{setLanguage(challenges[challenge].name)}</span>
+                                                    {setLanguage(challenges[challenge].description).map((description, index) => (
+                                                        <span key={index} className="card-challenge__description">{description}</span>
+                                                    ))}
+                                                    {challenges[challenge].contribution?
+                                                        (
+                                                            <Link
+                                                                to={challenges[challenge].contribution}
+                                                                className='flat-button card-challenge__int-link'
+                                                            >
+                                                                {page.btnSeeMore}
+                                                            </Link>
+                                                        )
+                                                    : null
+                                                    }
+                                                    {iconStatus(challenges[challenge].status)}    
+                                            </div>                             
+                                        ))}
+                                    </div>
+                                : <div className="card-body"><h3 className='no-data'>{page.noData}</h3></div>
+                                }
+                                </section>
+
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expanded={expanded === 'panel-training'}
+                            onChange={handleAccordionChange('panel-training')}
+                        >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon className='accordion__expand' />}
+                                aria-controls="panel-training"
+                                id="panel-training"
+                                className='accordion__summary accordion__training'
+                            >
+                                <FontAwesomeIcon icon={faFlask} />
+                                <span>
+                                    {page.trainingTitle}
+                                </span>
+                            </AccordionSummary>
+                            <AccordionDetails className='accordion__details'>
+                                <section className='card card--accordion'>
+                                    <div className="card-body accordion__card">
+                                        <div className="card-challenge">
+                                            <span className="card-challenge__title">
+                                                {page.jobVisualiser.title}
+                                            </span>
+                                            <span className="card-challenge__description">
+                                                {page.jobVisualiser.description}
+                                            </span>
+                                            <span className="card-challenge__description">
+                                                {page.jobVisualiser.tags}
+                                            </span>
+                                            <Link 
+                                                to={page.jobVisualiser.link} 
+                                                className='flat-button card-challenge__int-link'
+                                            >
+                                                {page.btnSeeMore}
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </section>
+                            </AccordionDetails>
+                        </Accordion>
+                    </div>
                     
                     <Link 
                         to="/blog"
