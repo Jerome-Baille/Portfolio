@@ -1,6 +1,6 @@
 // const baseURL = 'https://backend-portfolio.onrender.com/api/';
-// const baseURL = 'https://jerome-baille.fr/api/';
-const baseURL = 'http://localhost:3000/api/';
+const baseURL = 'https://jerome-baille.fr/api/';
+// const baseURL = 'http://localhost:3000/api/';
 
 
 export async function getAbout(lang) {
