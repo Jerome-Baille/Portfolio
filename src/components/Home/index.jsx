@@ -2,15 +2,15 @@ import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Typewriter from "typewriter-effect";
-import Projects from '../Projects';
+import ProjectsPreview from '../Projects/ProjectsPreview';
 import Loader from 'react-loaders';
-import Blog from '../Blog';
+import BlogPreview from '../Blog/BlogPreview';
 import { LanguageContext } from '../Layout';
 
 const Home = () => {
     const { language } = useContext(LanguageContext);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [data, setData] = useState();
+    const [data, setData] = useState();      
 
     useEffect(() => {
         const En = {
@@ -91,8 +91,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Blog />
-                <Projects />
+                <section className='section'>
+                    <BlogPreview />
+                </section>
+                <section className='section'>
+                    <ProjectsPreview />
+                </section>
             </div> 
         )
         : 

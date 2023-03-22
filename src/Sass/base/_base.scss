@@ -73,13 +73,17 @@ h1 {
         margin-left: 20px;
         animation: handWave 5s;
       }
+
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+      }
 }
 
 h2 {
     font-family: 'Coolvetica';
     letter-spacing: 1px;
     color: $primaryColor;
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 400;
     position: relative;
     text-transform: capitalize;
@@ -114,14 +118,22 @@ h2 {
         margin-left: 20px;
         opacity: 0.6;
       }
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 32px;
     margin:0;
     font-family: 'Coolvetica';
     letter-spacing: 1px;
     color: $primaryColor;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
 }
 
 .mr0 {

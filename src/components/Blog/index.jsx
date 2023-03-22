@@ -249,7 +249,7 @@ const Blog = () => {
                                             target="_blank" 
                                             rel="noopener noreferrer" 
                                             className='card-challenge__ext-link'
-                                            aria-label={`Go to ${setLanguage(challenges[challenge].name)} certification page`}
+                                            aria-label={`Go to ${setLanguage(challenges[challenge].name)} challenge page`}
                                         />
                                             <span className="card-challenge__title">{setLanguage(challenges[challenge].name)}</span>
                                             {setLanguage(challenges[challenge].description).map((description, index) => (
@@ -275,7 +275,7 @@ const Blog = () => {
                             : <div className="card-body"><h3 className='no-data'>{page.noData}</h3></div>}
                         </div>
 
-                        <div className="card card-training">
+                        <div className="card card-training card-training--big">
                             <div className="card-header">
                                 <FontAwesomeIcon icon={faFlask} />
                                 <span>

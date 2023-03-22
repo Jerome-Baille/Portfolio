@@ -101,4 +101,19 @@
             margin: auto;
         }
     }
+
+    .projects-wrapper--preview{
+        display: grid;
+        width: 100%;
+        grid-gap: 30px;
+        animation: apparition-short 3s ease-in-out;   
+        grid-auto-flow: column;
+        overflow-x: auto;
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+
+        & .flip-card-container {
+            scroll-snap-align: center;
+        }
+    }
 }
