@@ -5,7 +5,9 @@ import AnimatedLetters from '../AnimatedLetters'
 import ProfilePicture from '../../assets/images/about/DSC_0703_2.JPG'
 import Signature from '../../assets/images/about/Signature.png'
 
-import { getAbout, getStack } from '../../services/service';
+import en from '../../locales/en.json'
+import fr from '../../locales/fr.json'
+import stackList from '../../assets/stackList.json'
 
 import { LanguageContext } from '../Layout';
 
@@ -13,28 +15,13 @@ const About = () => {
   const [about, setAbout] = useState([])
   const [stack, setStack] = useState([])
   const { language } = useContext(LanguageContext);
+  const [descriptionType, setDescriptionType] = useState('medium')
 
   useEffect(() => {
-    const fetchData = async (lang) => {
-      try {
-        const [aboutData, stackData] = await Promise.all([
-          getAbout(lang),
-          getStack()
-        ]);
-        lang==='fr' ? aboutData.greetings = ['B','o','n','j','o','u','r'] : aboutData.greetings = ['H','e','l','l','o', ' ', 'T','h','e','r','e'];
+    setStack(stackList);
 
-        setAbout(aboutData);
-        setStack(stackData);
-
-      } catch (err) {
-        console.log(err);
-      }
-    };
-  
-    const lang = language === 'fr' ? 'fr' : 'en';
-    fetchData(lang);
+    language === 'fr' ? setAbout(fr.about) : setAbout(en.about);
   }, [language])
-
 
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -44,6 +31,7 @@ const About = () => {
     }, 3000)
   }, [])
 
+
   if(about.length !== 0 && stack.length !== 0) {
     return (
       <div className="container">
@@ -52,7 +40,7 @@ const About = () => {
               <h1>
                 <AnimatedLetters
                   letterClass={letterClass}
-                  strArray={about.greetings}
+                  strArray={about.greetings.split('')}
                   idx={15}
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64">
@@ -69,12 +57,32 @@ const About = () => {
                   </g>
                 </svg>
               </h1>
+              <div
+                className='descriptionType-container '
+              >
+                <button 
+                  className='flat-button' 
+                  onClick={() => setDescriptionType('short')}
+                >
+                  {about.shortBtn}
+                </button>
+                <button 
+                  className='flat-button' 
+                  onClick={() => setDescriptionType('medium')}
+                >
+                  {about.mediumBtn}
+                </button>
+                <button 
+                  className='flat-button' 
+                  onClick={() => setDescriptionType('long')}
+                >
+                  {about.longBtn}
+                </button>
+              </div>
               <div id="description">
-                {about.descriptions.map((description, index) => (
-                  <p key={index}>
-                    {description}
-                  </p>
-                ))}
+                <p>
+                  {about[`${descriptionType}Description`]}
+                </p>
               </div>
               <div className='signature-container'>
                 <img src={Signature} alt="Signature"/>
@@ -86,10 +94,10 @@ const About = () => {
                 <img src={ProfilePicture} className="your-pic" alt="Profile" />
               </div>
               <section className='stack-container'>
-                {stack.map((stack, index) => (
-                  <div className='stack-single' key={index}>
-                    <img src={process.env.PUBLIC_URL + stack.url} alt={stack.name + ' logo'} />
-                    <span>{stack.name}</span>
+                {Object.values(stack).map((item) => (
+                  <div key={item.id} className='stack-single'>
+                    <img src={process.env.PUBLIC_URL + item.url} alt={item.name} />
+                    <p>{item.name}</p>
                   </div>
                 ))}
               </section>

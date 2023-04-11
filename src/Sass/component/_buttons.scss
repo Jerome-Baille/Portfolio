@@ -16,6 +16,11 @@
     text-align: center;
     width: fit-content;
 
+    &.active {
+      background-color: $secondaryColor;
+      color: $backgroundColor;
+    }
+
     &:hover {
       background-color: $secondaryColor;
       color: $backgroundColor;

@@ -1,0 +1,62 @@
+{
+    "Angular" : {
+        "id": "Angular",
+        "name": "Angular",
+        "url": "/Stack/angular.svg"
+    },
+    "React" : {
+        "id": "React",
+        "name": "React",
+        "url": "/Stack/react.svg"
+    },
+    "HTML5" : {
+        "id": "HTML-5",
+        "name": "HTML 5",
+        "url": "/Stack/html5.svg"
+    },
+    "JavaScript" : {
+        "id": "JavaScript",
+        "name": "JavaScript",
+        "url": "/Stack/javascript.svg"
+    },
+    "CS3" : {
+        "id": "CSS-3",
+        "name": "CSS 3",
+        "url": "/Stack/css3.svg"
+    },
+    "Sass" : {
+        "id": "Sass",
+        "name": "Sass",
+        "url": "/Stack/sass.svg"
+    },
+    "NodeJs" : {
+        "id": "Node-js",
+        "name": "Node.js",
+        "url": "/Stack/nodejs.svg"
+    },
+    "Express" : {
+        "id": "Express-js",
+        "name": "Express.js",
+        "url": "/Stack/express.svg"
+    },
+    "MongoDB" : {
+        "id": "MongoDB",
+        "name": "MongoDB",
+        "url": "/Stack/mongodb.svg"
+    },
+    "MySQL" : {
+        "id": "MySQL",
+        "name": "MySQL",
+        "url": "/Stack/mysql.svg"
+    },
+    "Git" : {
+        "id": "Git",
+        "name": "Git",
+        "url": "/Stack/git.svg"
+    },
+    "Github" : {
+        "id": "GitHub",
+        "name": "GitHub",
+        "url": "/Stack/github.svg"
+    }
+}

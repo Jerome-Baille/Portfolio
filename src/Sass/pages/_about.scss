@@ -17,6 +17,19 @@
                 height: auto;
             }
         }
+
+        .descriptionType-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            grid-gap: 10px;
+            margin-bottom: 40px;
+
+            button {
+                margin: auto;
+            }
+        }
     }
     
     .img-column {
@@ -26,7 +39,7 @@
         padding: 0 20px;
         overflow: auto;
     
-        .img-wraper {
+        .img-wrapper {
             width: 100%;
             text-align: center;
     
