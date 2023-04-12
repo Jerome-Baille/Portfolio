@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d97f4d18.css",
-    "main.js": "/static/js/main.12fe365c.js",
-    "static/js/937.0a13bb1b.chunk.js": "/static/js/937.0a13bb1b.chunk.js",
-    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
-    "static/media/Jérôme BAILLE - Développeur Frontend.pdf": "/static/media/Jérôme BAILLE - Développeur Frontend.4148cc2cc403d1bcee5b.pdf",
-    "static/media/Jerome BAILLE - Frontend Developer.pdf": "/static/media/Jerome BAILLE - Frontend Developer.43e23bddc4db17bec33d.pdf",
-    "static/media/DSC_0703_2.JPG": "/static/media/DSC_0703_2.9513b4f0cf1c7dd525e8.JPG",
-    "static/media/Signature.png": "/static/media/Signature.a6a00edf67a5a06a36a3.png",
-    "static/media/JB-logo2.png": "/static/media/JB-logo2.9e6b4dcec3e1151bbccc.png",
-    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
-    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
-    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/index.html",
-    "main.d97f4d18.css.map": "/static/css/main.d97f4d18.css.map",
-    "main.12fe365c.js.map": "/static/js/main.12fe365c.js.map",
-    "937.0a13bb1b.chunk.js.map": "/static/js/937.0a13bb1b.chunk.js.map",
-    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.dfca6362.css",
+    "main.js": "/Portfolio/static/js/main.2cdcdeec.js",
+    "static/js/937.0a13bb1b.chunk.js": "/Portfolio/static/js/937.0a13bb1b.chunk.js",
+    "static/js/787.a2cb61a6.chunk.js": "/Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Jérôme BAILLE - Développeur Frontend.pdf": "/Portfolio/static/media/Jérôme BAILLE - Développeur Frontend.4148cc2cc403d1bcee5b.pdf",
+    "static/media/Jerome BAILLE - Frontend Developer.pdf": "/Portfolio/static/media/Jerome BAILLE - Frontend Developer.43e23bddc4db17bec33d.pdf",
+    "static/media/DSC_0703_2.JPG": "/Portfolio/static/media/DSC_0703_2.9513b4f0cf1c7dd525e8.JPG",
+    "static/media/Signature.png": "/Portfolio/static/media/Signature.a6a00edf67a5a06a36a3.png",
+    "static/media/JB-logo2.png": "/Portfolio/static/media/JB-logo2.9e6b4dcec3e1151bbccc.png",
+    "static/media/helvetica-neu.ttf": "/Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/Portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff": "/Portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Portfolio/index.html",
+    "main.dfca6362.css.map": "/Portfolio/static/css/main.dfca6362.css.map",
+    "main.2cdcdeec.js.map": "/Portfolio/static/js/main.2cdcdeec.js.map",
+    "937.0a13bb1b.chunk.js.map": "/Portfolio/static/js/937.0a13bb1b.chunk.js.map",
+    "787.a2cb61a6.chunk.js.map": "/Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d97f4d18.css",
-    "static/js/main.12fe365c.js"
+    "static/css/main.dfca6362.css",
+    "static/js/main.2cdcdeec.js"
   ]
 }
