@@ -10,7 +10,7 @@
         "url": "/Stack/react.svg"
     },
     "HTML5" : {
-        "id": "HTML-5",
+        "id": "HTML5",
         "name": "HTML 5",
         "url": "/Stack/html5.svg"
     },
@@ -19,8 +19,8 @@
         "name": "JavaScript",
         "url": "/Stack/javascript.svg"
     },
-    "CS3" : {
-        "id": "CSS-3",
+    "CSS3" : {
+        "id": "CSS3",
         "name": "CSS 3",
         "url": "/Stack/css3.svg"
     },

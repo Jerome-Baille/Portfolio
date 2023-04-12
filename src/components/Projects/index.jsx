@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
 
-import { getAllProjects } from '../../services/service';
+import projectList from '../../assets/projectList.json';
+import en from '../../locales/en.json';
+import fr from '../../locales/fr.json';
 
 import { LanguageContext } from '../Layout';
 
@@ -23,21 +25,8 @@ const Projects = () => {
     }
 
     useEffect(() => {
-        const En = {
-            title: ['M', 'y', ' ', 'C', 'u', 'r', 'a', 't', 'e', 'd', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's'],
-            subtitle: 'A small collection of recent projects I have worked on to get a better understanding of my skills and abilities. I have done them all together with amazing people. Please note that with the exception of the Groupomania project, I did not create the design of the website.',
-        }
-        const Fr = {
-            title: ['S','é','l','e','c','t','i','o','n',' ','d','e',' ','P','r','o','j','e','t','s'],
-            subtitle: 'Une petite collection de projets récents sur lesquels j\'ai travaillé pour améliorer mes compétences et mes capacités. Je les ai tous réalisés en collaboration avec des gens extraordinaires. Veuillez noter qu\'à l\'exception du projet Groupomania, je n\'ai pas créé le design du site web.',
-        }
-
-        getAllProjects().then(data => {
-            setProjects(data)
-            setPage(language === 'fr' ? Fr : En)
-        }).catch(err => {
-            console.log(err)
-        })
+        setProjects(projectList)
+        setPage(language === 'fr' ? fr.projects : en.projects)
       }, [language])
 
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -48,15 +37,16 @@ const Projects = () => {
         }, 4000)
     }, [])
 
-    if(projects.length !== 0){
+    if(projects.length === 0){
+        return <Loader type="pacman"/>
+    } else {
         return (
-            <>
             <div className='container projects-page'>
                 <section className='project-section'>
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={page.title}
+                            strArray={page.title.split('')}
                             idx={15}
                         />
                     </h1>
@@ -96,8 +86,6 @@ const Projects = () => {
                     </div>
                 </section>
             </div>
-            <Loader type="pacman"/>
-            </>
         )
     }
 }

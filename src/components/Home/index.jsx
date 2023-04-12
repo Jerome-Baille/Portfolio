@@ -2,10 +2,11 @@ import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Typewriter from "typewriter-effect";
-import ProjectsPreview from '../Projects/ProjectsPreview';
+// import ProjectsPreview from '../Projects/ProjectsPreview';
 import Loader from 'react-loaders';
 import BlogPreview from '../Blog/BlogPreview';
 import { LanguageContext } from '../Layout';
+import Projects from '../Projects/ProjectsContainer';
 
 const Home = () => {
     const { language } = useContext(LanguageContext);
@@ -95,7 +96,8 @@ const Home = () => {
                     <BlogPreview />
                 </section>
                 <section className='section'>
-                    <ProjectsPreview />
+                    {/* <ProjectsPreview /> */}
+                    <Projects />
                 </section>
             </div> 
         )

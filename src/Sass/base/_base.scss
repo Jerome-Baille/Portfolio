@@ -87,12 +87,8 @@ h2 {
     font-weight: 400;
     position: relative;
     text-transform: capitalize;
-    animation: fadeIn 1s 1.8s backwards;
-    margin-top:0;
-
-    @media screen and (max-width: 768px) {
-      padding: 0;
-    }
+    animation: apparition 3s ease-in-out;
+    margin:0;
 
     &:before {
         content: '<h2>';
@@ -130,6 +126,7 @@ h3 {
     font-family: 'Coolvetica';
     letter-spacing: 1px;
     color: $primaryColor;
+    animation: apparition 3s ease-in-out;
 
     @media screen and (max-width: 768px) {
       font-size: 24px;

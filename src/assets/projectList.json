@@ -1,0 +1,90 @@
+{
+    "PhoceaTravel":{
+        "id": "PhoceaTravel",
+        "logo": "/Projects/PhoceaTravel/phocea-travel-logo.png",
+        "pictures": {
+            "desktop" : {
+                "url": "/Projects/PhoceaTravel/phocea-travel-desktop.png"
+            },
+            "mobile" : {
+                "url": "/Projects/PhoceaTravel/phocea-travel-mobile.png"
+            }
+        },
+        "tags": "React, HTML5, CSS3, Sass",
+        "github": "https://github.com/Jerome-Baille/phocea-travel",
+        "demo": "https://jerome-baille.github.io/phocea-travel/"
+    },
+    "OhMyFood": {
+        "id": "OhMyFood",
+        "logo": "/Projects/OhMyFood/ohMyFood-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/Projects/OhMyFood/mokup1.png"
+            },
+            "mockup2": {
+                "url": "/Projects/OhMyFood/mokup2.png"
+            }
+        },
+        "tags": "React, HTML5, CSS3,  Sass",
+        "github": "https://github.com/Jerome-Baille/ohmyfood",
+        "demo": "https://jerome-baille.github.io/ohmyfood/"
+    },
+    "LaChouetteAgence": {
+        "id": "LaChouetteAgence",
+        "logo": "/Projects/LaChouetteAgence/laChouetteAgence-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/Projects/LaChouetteAgence/mokup1.png"
+            },
+            "mockup2": {
+                "url": "/Projects/LaChouetteAgence/mokup2.png"
+            }
+        },
+        "tags": "SEO,  WebAccessibility,  audit, HTML5, CSS3",
+        "github": "https://github.com/Jerome-Baille/JeromeBaille_4_09122021",
+        "demo": "https://jerome-baille.github.io/JeromeBaille_4_09122021/"
+    },
+    "Kanap": {
+        "id": "Kanap",
+        "logo": "/Projects/Kanap/kanap-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/Projects/Kanap/mokup1.png"
+            },
+            "mockup2": {
+                "url": "/Projects/Kanap/mokup2.png"
+            }
+        },
+        "tags": "e-commerce, HTML5, CSS3, JavaScript",
+        "github": "https://github.com/Jerome-Baille/JeromeBaille_5_03012022",
+        "demo": "https://jerome-baille.github.io/JeromeBaille_5_03012022"
+    },
+    "Piiquante": {
+        "id": "Piiquante",
+        "logo": "/Projects/Piiquante/piiquante-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/Projects/Piiquante/mokup1.png"
+            },
+            "mockup2": {
+                "url": "/Projects/Piiquante/mokup2.png"
+            }
+        },
+        "tags": "API,  NodeJs,  Express,  MongoDB",
+        "github": "https://github.com/Jerome-Baille/JeromeBaille_6_24012022"
+    },
+    "Groupomania": {
+        "id": "Groupomania",
+        "logo": "/Projects/Groupomania/groupomania-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/Projects/Groupomania/mokup1.png"
+            },
+            "mockup2": {
+                "url": "/Projects/Groupomania/mokup2.png"
+            }
+        },
+        "tags": "Angular, Sass, NodeJs,  Express,  MySQL,  SocialNetwork",
+        "github": "https://github.com/Jerome-Baille/JeromeBaille_7_23022022"
+    }
+}

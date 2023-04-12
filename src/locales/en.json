@@ -7,5 +7,152 @@
         "mediumDescription": "I am Jérôme, a freelance full-stack developer based in the south of France. \n\nWith a passion for new technologies, I have been developing web applications for various clients using Angular and React for front-end and Node.js for back-end development. \n\nMy extensive background in the banking sector has given me exceptional negotiation skills, flexibility, and rigor which I bring to every project I work on. \n\nMy expertise in both front-end and back-end development has enabled me to create clean and sharp code that generates accessible, user-friendly, and high-performing web applications. \n\nFrom static landing pages to e-commerce websites, I have worked on a variety of projects with autonomy and precision. \n\nAs a determined and tenacious developer, I am always eager to take on new challenges and put my diverse skill set to use in ambitious projects. \n\nIf you would like to learn more about me and my experience, please do not hesitate to contact me.",
         "longBtn": "Long",
         "longDescription" : "I am Jérôme, a professional and passionate developer based in the south of France. \n\nOver the years, my curiosity led me to explore different aspects of new technologies including 2 years as ambassador for Microsoft France (Microsoft’s “House of Fans” program). \n\nAfter a career in the banking sector, where I acquired and sharpened my listening skills, my flexibility and my rigor, I decided to get back to my true passion: coding. With great determination, I went back to school to finally get certificated in Web Development. \n\nThroughout this journey, I carried out multiple professional projects in perfect autonomy and precision. \n\nAt this moment, I am tenaciously looking to put my diverse and rich background at the service of ambitious and challenging projects. \n\nThanks to the manifold projects I have worked on, I have been able to manage both the front and the back end, giving me as global vision of the development of a web application. \n\nMy goal is to create a clean and sharp code that generates a web app that is both accessible, user-friendly and performing. \n\nIf you would like to know more about me and my projects feel free to contact me! \n\nWith my best regards,"
+    },
+    "projects": {
+        "title": "My Curated Projects",
+        "subtitle": "A small collection of recent projects I have worked on to get a better understanding of my skills and abilities. I have done them all together with amazing people. Please note that with the exception of the Groupomania project, I did not create the design of the website.",
+        "skillsTitle": "Needed Skills",
+        "stackTitle": "Stack Used",
+        "improvementTitle": "Possible areas of improvement",
+        "backBtn": "Back",
+        "PhoceaTravel": {
+            "title": "Phocea Travel",
+            "subtitle": "Responsive website for a travel agency.",
+            "pictures": {
+                "desktop": {
+                    "alt": "Phocea Travel website on desktop"
+                },
+                "mobile": {
+                    "alt": "Phocea Travel website on mobile"
+                }
+            },
+            "descriptions" : "Phocéa Travel is a small company offering a vacation planning tool! \nIts website allows users to find accommodations and activities in the city of their choice. \nAccommodations can also be filtered by theme, such as budget or ambiance.",
+            "skills": [
+                "Integrate content according to a template.",
+                "Implement a responsive interface."
+            ],
+            "improvements": [
+                "Make the search bar functional.",
+                "Add a database to turn the static website into a modern dynamic app.",
+                "Link the website to google maps API to show the location of the accommodations.",
+                "Add a login system to allow users to book accommodations."
+            ]
+        },
+        "OhMyFood": {
+            "title": "OhMyFood",
+            "subtitle": "Dynamizing a web page with CSS animations.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "OhMyFood website, first mockup."
+                },
+                "mockup2": {
+                    "alt": "OhMyFood website, second mockup."
+                }
+            },
+            "descriptions" : "Ohmyfood! is a young startup that would like to impose itself on the restaurant market. \nThe objective is to develop a 100% mobile website that lists the menus of gourmet restaurants. \nIn addition to the classic reservation systems, customers will be able to compose the menu of their meal so that the dishes are ready when they arrive. \nNo more waiting in restaurants!",
+            "skills": [
+                "Implementing advanced graphic CSS effects",
+                "Ensuring the graphic coherence of a website",
+                "Setting up a Front-End environment",
+                "Setting up a navigation structure for a website", 
+                "Using a version management system for project monitoring and hosting"
+            ],
+            "improvements": [
+                "Create a login system to allow users to save their favorite restaurants",
+                "Create a system to book reservations",
+                "Create a restaurant dashboard for restaurant owner to manage their own menu"
+            ]
+        },
+        "LaChouetteAgence": {
+            "title": "La Chouette Agence",
+            "subtitle": "Optimization of an existing website.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "La Chouette Agence website, first mockup."
+                },
+                "mockup2": {
+                    "alt": "La Chouette Agence website, second mockup."
+                }
+            },
+            "descriptions" : "La chouette agence is a large web design agency based in Lyon, France. \nDue to SEO problems, the website was only on the second page of search engines. \nAn SEO optimization was therefore performed and an improvement of the website's code in order to correct the display errors and improve the website's accessibility.",
+            "skills": [
+                "Optimizing the size and speed of a website",
+                "Ensuring the accessibility of a website",
+                "Optimizing the referencing of a website",
+                "Researching best practices in web development",
+                "Writing maintainable HTML and CSS code"
+            ],
+            "improvements": [
+                "Modify the format of the different images to improve speed and size"
+            ]
+        },
+        "Kanap": {
+            "title": "Kanap",
+            "subtitle": "Building an e-commerce website in JavaScript.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "Kanap website, first mockup."
+                },
+                "mockup2": {
+                    "alt": "Kanap website, second mockup."
+                }
+            },
+            "descriptions" : "Kanap is a sofa brand that sells its products exclusively from its store. \nToday, the company wanted to have an e-commerce platform in addition to its physical store to sell its products on the Internet.",
+            "skills": [
+                "Validating data from external sources",
+                "Managing JavaScript events",
+                "Creating a test plan for an application",
+                "Interacting with a web service using JavaScript"
+            ],
+            "improvements": [
+                "Create a login system to allow users to save their favorite products",
+                "Create a login system to allow users to modify and/or keep track of their order"
+            ]
+        },
+        "Piiquante": {
+            "title": "Piiquante",
+            "subtitle": "Building an API for a food review application.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "Piiquante website, first mockup."
+                },
+                "mockup2": {
+                    "alt": "Piiquante website, second mockup."
+                }
+            },
+            "descriptions" : "Piiquante is a hot sauce company that wants to develop a hot sauce review web application called 'Hot Takes'. \nWhile Piiquante's product manager hopes to eventually turn the review application into an online store, she wants the first version to be a 'sauce gallery' that allows users to upload their favorite hot sauces and to like or dislike the sauces that others share.",
+            "skills": [
+                "Implement a logical data model in accordance with regulations",
+                "Implement CRUD operations in a secure manner",
+                "Store data in a secure manner"
+            ],
+            "improvements": [
+                "Create an online store to allow users to buy hot sauces",
+                "Modify the code to prevent users from leaving the app on refresh"
+            ]
+        },
+        "Groupomania": {
+            "title": "Groupomania",
+            "subtitle": "Creation of a company social network.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "website, first mockup."
+                },
+                "mockup2": {
+                    "alt": "website, second mockup."
+                }
+            },
+            "descriptions" : "Groupomania est un groupe spécialisé dans la distribution de masse. \nLe projet consiste à créer un réseau social interne pour les employés de Groupomania. \nL'objectif de cet outil est de faciliter les interactions entre collègues.",
+            "skills": [
+                "Authenticating a user and maintaining their session",
+                "Managing a data store using SQL",
+                "Implementing secure data storage using SQL",
+                "Customize the content sent to a web client"
+            ],
+            "improvements": [
+                "Change the comment system to a nested one to allow for replies",
+                "Implement a system to resize user's profile picture"
+            ]
+        }
     }
 }
