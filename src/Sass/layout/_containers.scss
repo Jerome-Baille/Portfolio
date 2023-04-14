@@ -16,19 +16,20 @@
 
 .container {
     width: 100%;
-    padding-top: 100px;
-    will-change: contents;
+    padding: 50px 2rem 0 2rem;
     height: auto;
+}
+
+.inside-container {
+    width: 100%;
+    max-width: 1200px;
     opacity: 0;
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
-
-    @media screen and (max-width: 768px) {
-        padding-top: 50px;
-    }
+    will-change: contents;
 }
 
 .projects-page {
@@ -42,11 +43,7 @@
 .single-project, .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    @include container-s;
-    @include container-m;
-    @include container-l;
-    @include container-xl;
+    grid-gap: 50px;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -54,7 +51,7 @@
 }
 
 .single-project {
-    margin: 50px auto;
+    margin: auto;
     padding-bottom: 100px !important;
 
     @media screen and (max-width: 768px) {
@@ -94,7 +91,7 @@
     }
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       color: $primaryColor;
       font-family: 'Coolvetica';
       z-index: 50;

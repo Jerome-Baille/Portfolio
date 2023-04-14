@@ -19,7 +19,7 @@ const AboutPresentation = ({
 
     return (
         <div className="container">
-            <section className="about">
+            <section className="about inside-container">
                 <div className="text-column">
                     <h1>
                         <AnimatedLetters
@@ -48,12 +48,12 @@ const AboutPresentation = ({
                         </p>
                     </div>
                     <div className='signature-container'>
-                        <img src={signature} alt="Handwriten signature of Jerome."/>
+                        <img src={process.env.PUBLIC_URL + signature} alt="Handwriten signature of Jerome."/>
                     </div>
                 </div>
                 <div className='img-column'>
                 <div className="img-wrapper">
-                    <img src={profilePicture} className="your-pic" alt="Jerome looking to his left in black and white." />
+                    <img src={process.env.PUBLIC_URL + profilePicture} className="your-pic" alt="Jerome looking to his left in black and white." />
                 </div>
                 <section className='stack-container'>
                     {Object.values(technologyList).map((item) => (

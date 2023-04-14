@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import AnimatedLetters from '../../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +34,7 @@ const ProjectsDetailPresentation = ({
 
     return (
         <div className="container">
-            <section className="single-project">
+            <section className="single-project inside-container">
                 <button onClick={() =>navigate(-1)} className='flat-button mr0 back-left'>
                     <FontAwesomeIcon icon={faArrowLeft} />
                     <span> {projectsDataLocale.backBtn}</span>
@@ -50,9 +50,35 @@ const ProjectsDetailPresentation = ({
                     <div className="subtitle">
                         <h2>{projectsDataLocale.subtitle}</h2>
                     </div>
-                    {projectsDataLocale.descriptions.split('\n').map((sentence, index) => {
+
+                    {Object.keys(projectsDataLocale.descriptions).map((description, index) => (
+                        <React.Fragment key={index}>
+                            {projectsDataLocale.descriptions[description].title && 
+                                <h3>{projectsDataLocale.descriptions[description].title}</h3>}
+                            {projectsDataLocale.descriptions[description].content && 
+                                projectsDataLocale.descriptions[description].content.split('\n').map((sentence, idx) => (
+                                    <p key={idx}>
+                                        {sentence}<br/>
+                                    </p>
+                                ))}
+                        </React.Fragment>
+                    ))}
+
+
+                    {/* {projectsDataLocale.descriptions.split('\n').map((sentence, index) => {
                         return <p key={index}>{sentence}</p>
                     })}
+
+                    {projectsDataLocale.descriptionsTitle1?
+                        <h3>{projectsDataLocale.descriptionsTitle1}</h3>
+                    : null}
+
+                    {projectsDataLocale.descriptions1?
+                        projectsDataLocale.descriptions1.split('\n').map((sentence, index) => {
+                            return <p key={index}>{sentence}</p>
+                        })
+                    : null} */}
+
                     <section className="skills">
                         <h3>
                             {projectsDataLocale.skillsTitle}
@@ -96,9 +122,15 @@ const ProjectsDetailPresentation = ({
                         <span> {projectsDataLocale.backBtn}</span>
                     </button>
                     {Object.keys(projectDataGeneric.pictures).map((picture, index) => (
-                        <div className="img-wraper" key={index}>
-                            <img src={process.env.PUBLIC_URL + projectDataGeneric.pictures[picture].url} alt={projectsDataLocale.pictures[picture].alt}/>
-                        </div>
+                        <figure className="img-wraper" key={index}>
+                            <img 
+                                src={process.env.PUBLIC_URL + projectDataGeneric.pictures[picture].url} 
+                                alt={projectsDataLocale.pictures[picture].alt}
+                            />
+                            <figcaption>
+                                Figure {index+1} : {projectsDataLocale.pictures[picture].alt}
+                            </figcaption>
+                        </figure>
                     ))}
 
                     <footer>

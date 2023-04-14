@@ -5,12 +5,11 @@ import AboutPresentation from './AboutPresentation'
 import en from '../../locales/en.json'
 import fr from '../../locales/fr.json'
 
-import profilePicture from '../../assets/images/about/DSC_0703_2.JPG'
-import signature from '../../assets/images/about/Signature.png'
-
 import { LanguageContext } from '../Layout';
 
 const AboutContainer = () => {
+  const profilePicture = '/images/about/DSC_0703_2.JPG'
+  const signature = '/images/about/Signature.png'
   const [aboutData, setAboutData] = useState({});
   const [descriptionButtonType, setDescriptionButtonType] = useState('medium');
 

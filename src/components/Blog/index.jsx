@@ -131,7 +131,7 @@ const Blog = () => {
     if(certifications && page.title){
         return (
             <div className="container projects-page">
-                <section className="project-section blog-section">
+                <section className="project-section blog-section inside-container">
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}

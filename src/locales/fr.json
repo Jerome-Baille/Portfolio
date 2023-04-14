@@ -154,5 +154,16 @@
                 "Mettre en œuvre un système de redimensionnement de la photo de profil de l'utilisateur"
             ]
         }
+    },
+    "contact": {
+        "title" : "Contactez Moi",
+        "subtitle": "Si vous voulez en savoir plus sur moi ou mes projets, n'hésitez pas à utiliser le formulaire ci-dessous. \nJe recherche un emploi à temps plein en tant que développeur front-end, back-end ou full-stack.",
+        "form" : {
+          "name": "Nom",
+          "email": "E-mail",
+          "subject": "Sujet",
+          "message": "Message",
+          "btnContact": "ENVOYER"
+        }
     }
 }

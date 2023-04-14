@@ -1,13 +1,29 @@
 {
+    "JobVisualiser": {
+        "id": "JobVisualiser",
+        "logo": "/images/Projects/JobVisualiser/jobVisualiser-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/images/Projects/JobVisualiser/mockup-1.png"
+            },
+            "mockup2": {
+                "url": "/images/Projects/JobVisualiser/mockup-2.png"
+            },
+            "mockup3": {
+                "url": "/images/Projects/JobVisualiser/mockup-3.png"
+            }
+        },
+        "tags": "React,  Sass,  NodeJs,  Express,  MongoDB, Chrome Extension"
+    },
     "PhoceaTravel":{
         "id": "PhoceaTravel",
-        "logo": "/Projects/PhoceaTravel/phocea-travel-logo.png",
+        "logo": "/images/Projects/PhoceaTravel/phocea-travel-logo.png",
         "pictures": {
             "desktop" : {
-                "url": "/Projects/PhoceaTravel/phocea-travel-desktop.png"
+                "url": "/images/Projects/PhoceaTravel/phocea-travel-desktop.png"
             },
             "mobile" : {
-                "url": "/Projects/PhoceaTravel/phocea-travel-mobile.png"
+                "url": "/images/Projects/PhoceaTravel/phocea-travel-mobile.png"
             }
         },
         "tags": "React, HTML5, CSS3, Sass",
@@ -16,13 +32,13 @@
     },
     "OhMyFood": {
         "id": "OhMyFood",
-        "logo": "/Projects/OhMyFood/ohMyFood-logo.png",
+        "logo": "/images/Projects/OhMyFood/ohMyFood-logo.png",
         "pictures": {
             "mockup1": {
-                "url": "/Projects/OhMyFood/mokup1.png"
+                "url": "/images/Projects/OhMyFood/mokup1.png"
             },
             "mockup2": {
-                "url": "/Projects/OhMyFood/mokup2.png"
+                "url": "/images/Projects/OhMyFood/mokup2.png"
             }
         },
         "tags": "React, HTML5, CSS3,  Sass",
@@ -31,13 +47,13 @@
     },
     "LaChouetteAgence": {
         "id": "LaChouetteAgence",
-        "logo": "/Projects/LaChouetteAgence/laChouetteAgence-logo.png",
+        "logo": "/images/Projects/LaChouetteAgence/laChouetteAgence-logo.png",
         "pictures": {
             "mockup1": {
-                "url": "/Projects/LaChouetteAgence/mokup1.png"
+                "url": "/images/Projects/LaChouetteAgence/mokup1.png"
             },
             "mockup2": {
-                "url": "/Projects/LaChouetteAgence/mokup2.png"
+                "url": "/images/Projects/LaChouetteAgence/mokup2.png"
             }
         },
         "tags": "SEO,  WebAccessibility,  audit, HTML5, CSS3",
@@ -46,13 +62,13 @@
     },
     "Kanap": {
         "id": "Kanap",
-        "logo": "/Projects/Kanap/kanap-logo.png",
+        "logo": "images/Projects/Kanap/kanap-logo.png",
         "pictures": {
             "mockup1": {
-                "url": "/Projects/Kanap/mokup1.png"
+                "url": "/images/Projects/Kanap/mokup1.png"
             },
             "mockup2": {
-                "url": "/Projects/Kanap/mokup2.png"
+                "url": "/images/Projects/Kanap/mokup2.png"
             }
         },
         "tags": "e-commerce, HTML5, CSS3, JavaScript",
@@ -61,13 +77,13 @@
     },
     "Piiquante": {
         "id": "Piiquante",
-        "logo": "/Projects/Piiquante/piiquante-logo.png",
+        "logo": "/images/Projects/Piiquante/piiquante-logo.png",
         "pictures": {
             "mockup1": {
-                "url": "/Projects/Piiquante/mokup1.png"
+                "url": "/images/Projects/Piiquante/mokup1.png"
             },
             "mockup2": {
-                "url": "/Projects/Piiquante/mokup2.png"
+                "url": "/images/Projects/Piiquante/mokup2.png"
             }
         },
         "tags": "API,  NodeJs,  Express,  MongoDB",
@@ -75,13 +91,13 @@
     },
     "Groupomania": {
         "id": "Groupomania",
-        "logo": "/Projects/Groupomania/groupomania-logo.png",
+        "logo": "/images/Projects/Groupomania/groupomania-logo.png",
         "pictures": {
             "mockup1": {
-                "url": "/Projects/Groupomania/mokup1.png"
+                "url": "/images/Projects/Groupomania/mokup1.png"
             },
             "mockup2": {
-                "url": "/Projects/Groupomania/mokup2.png"
+                "url": "/images/Projects/Groupomania/mokup2.png"
             }
         },
         "tags": "Angular, Sass, NodeJs,  Express,  MySQL,  SocialNetwork",

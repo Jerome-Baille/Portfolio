@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom';
-import JBLogo from '../../../assets/images/JB-logo2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -9,12 +8,13 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../Layout';
 
 function DesktopNavbar() {
+    const JBLogo = '/images/JB-logo2.png'
     const { language } = useContext(LanguageContext);
 
     return (
         <div className="navbar">
             <Link className='logo' to='/'>
-                <img src={JBLogo} alt="Jerome Baille logo" />
+                <img src={process.env.PUBLIC_URL + JBLogo} alt="Jerome Baille logo" />
             </Link>
             <nav>
                 <NavLink 

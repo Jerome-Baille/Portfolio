@@ -13,7 +13,7 @@ const Error404 = () => {
 
     return (
         <div className="container">
-            <section className="error">
+            <section className="error inside-container">
                 <div className='error-text'>
                     <h1>
                         <AnimatedLetters

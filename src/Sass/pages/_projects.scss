@@ -3,20 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px !important;
-
-    @include container-m;
-    @include container-l;
-    @include container-xl;
-
-    @media screen and (max-width: 768px) {
-        max-width: 800px;
-        padding: 0 2rem 100px 2rem;
-    }
-
-    @media screen and (min-width: 769px) and (max-width: 992px) {
-        padding-bottom: 30px;
-    }
 
     & img {
         width: 100%;

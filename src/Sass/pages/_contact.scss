@@ -3,12 +3,6 @@
     grid-template-columns: 1fr;
     margin: 0 auto;
     text-align: center;
-
-    @include container-s;
-    @include container-m;
-    @include container-l;
-    @include container-xl;
-
   
     header {
       display: flex;

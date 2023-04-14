@@ -69,7 +69,7 @@ const Contact = () => {
   } else {
     return (
         <div className="container">
-          <div className="contact-page">
+          <div className="contact-page inside-container">
             <header>
               <h1>
                 <AnimatedLetters

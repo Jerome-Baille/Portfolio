@@ -18,7 +18,7 @@ const ProjectsPresentation = ({
 
     return (
         <div className='container projects-page'>
-            <section className='project-section'>
+            <section className='project-section inside-container'>
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}

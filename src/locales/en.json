@@ -15,6 +15,48 @@
         "stackTitle": "Stack Used",
         "improvementTitle": "Possible areas of improvement",
         "backBtn": "Back",
+        "JobVisualiser": {
+            "title": "Job Visualiser",
+            "subtitle": "Job visualiser dashboard to track your applications.",
+            "pictures": {
+                "mockup1": {
+                    "alt": "Mockup of the dashboard on three different devices."
+                },
+                "mockup2": {
+                    "alt": "Manual add of a job opportunity on mobile."
+                },
+                "mockup3": {
+                    "alt": "Main dashboard on mobile."
+                }
+            },
+            "descriptions": {
+                "1": {
+                    "content": "Job Visualiser is a 3 parts web application that helps users to visualise their job search process. It helps users to track their job search process and helps them to visualise their progress."
+                },
+                "2": {
+                    "title": "The Chrome Extension",
+                    "content": "The extension helps users to track their job search process by adding jobs to their dashboard. \nIt collects the title of the position, the company name, the location, the type of job (remote, hybrid or on site) and the date of application. \nIf the extension is not compatible with the website, the user can manually add the job from the dashboard."
+                },
+                "3": {
+                    "title": "The Application Programming Interface (API)",
+                    "content": "It allows both the extension and the dashboard to communicate with the database and to store the data. \nThe API is written in Node.JS with Express and uses MongoDB as a database. \nThe API is deployed on PlanetHoster."
+                },
+                "4": {
+                    "title": "The Dashboard",
+                    "content": "A dashboard that displays the jobs added by the user. The dashboard displays the jobs in a timeline and allows the user to filter the jobs by type of job (remote, hybrid or on site) and by status (approved, rejected, pending or unknown). \nThe dashboard also displays statistics regarding the user's job search process. The statistics are displayed in a pie chart. The pie chart displays the number of jobs by status. A table also displays the number of jobs by status per months and per weeks. \nThe dashboard allows the user to modify (eg. to add an interview date, or modify the status of the job application) or delete any job application. \nThe dashboard also displays the list of job boards used by the user. So that the user can easily access the job boards and apply for jobs. \nThe dashboard is written in React with the Bootstrap library. It uses React-Google-Chart to display the pie chart."
+                }
+            },
+            "skills": [
+                "Create a Google Chrome Extension.",
+                "Create a dashboard with search bar and filters.",
+                "Create a pie chart and a table.",
+                "Create a CRUD to add, modify or delete the opportunities.",
+                "Implement PDF and Excel export."
+            ],
+            "improvements": [
+                "Add a favorite system to allow the user to save his favorite jobs."
+            ]
+        },
         "PhoceaTravel": {
             "title": "Phocea Travel",
             "subtitle": "Responsive website for a travel agency.",
@@ -154,5 +196,16 @@
                 "Implement a system to resize user's profile picture"
             ]
         }
+    },
+    "contact": {
+        "title": "Contact Me",
+        "subtitle": "If you want to know more about me or my projects, feel free to use the form below. \nI am looking for a fully remote front-end, back-end or full-stack job.",
+        "form" : {
+            "name": "Name",
+            "email": "E-mail",
+            "subject": "Subject",
+            "message": "Message",
+            "btnContact": "SEND"
+          }
     }
 }

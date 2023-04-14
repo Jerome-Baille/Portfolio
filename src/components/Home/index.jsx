@@ -47,58 +47,60 @@ const Home = () => {
         <>
         {data? (
             <div className="container home-page">
-                <div className="text-zone">
-                    <div className="main-text">
-                        <h1>
-                        <AnimatedLetters letterClass={letterClass} strArray={data.greeting} idx={12} />
-                        <br />
-                        <AnimatedLetters letterClass={letterClass} strArray={data.name} idx={15} />
-                        <br />
-                        <AnimatedLetters letterClass={letterClass} strArray={data.job} idx={20} />
-                        </h1>
-                        <Typewriter
-                            onInit={(typewriter)=> {
-                                typewriter              
-                                    .typeString(data.type1)
-                                    .pauseFor(2000)
-                                    .deleteAll()
-    
-                                    // .typeString("Back-End")
-                                    // .pauseFor(2000)
-                                    // .deleteAll()
-    
-                                    // .typeString("Full stack")
-                                    // .pauseFor(2000)
-                                    // .deleteAll()
-    
-                                    .typeString(data.type2)
-                                    .pauseFor(1000)
-                                    .deleteAll()
-    
-                                    .typeString(data.type3)
-                                    .pauseFor(2000)
-                                    .deleteAll()
-    
-                                    .start();
-                            }}
-                            options={{
-                                loop: true
-                            }}
-                        />
-    
-                        <div className='main-btn'>
-                            <Link to="/contact" className='flat-button'>{data.btnContact}</Link>
-                            <Link to="/about" className='flat-button'>{data.btnAbout}</Link>
+                <div className="inside-container">
+                    <div className="text-zone">
+                        <div className="main-text">
+                            <h1>
+                            <AnimatedLetters letterClass={letterClass} strArray={data.greeting} idx={12} />
+                            <br />
+                            <AnimatedLetters letterClass={letterClass} strArray={data.name} idx={15} />
+                            <br />
+                            <AnimatedLetters letterClass={letterClass} strArray={data.job} idx={20} />
+                            </h1>
+                            <Typewriter
+                                onInit={(typewriter)=> {
+                                    typewriter              
+                                        .typeString(data.type1)
+                                        .pauseFor(2000)
+                                        .deleteAll()
+        
+                                        // .typeString("Back-End")
+                                        // .pauseFor(2000)
+                                        // .deleteAll()
+        
+                                        // .typeString("Full stack")
+                                        // .pauseFor(2000)
+                                        // .deleteAll()
+        
+                                        .typeString(data.type2)
+                                        .pauseFor(1000)
+                                        .deleteAll()
+        
+                                        .typeString(data.type3)
+                                        .pauseFor(2000)
+                                        .deleteAll()
+        
+                                        .start();
+                                }}
+                                options={{
+                                    loop: true
+                                }}
+                            />
+        
+                            <div className='main-btn'>
+                                <Link to="/contact" className='flat-button'>{data.btnContact}</Link>
+                                <Link to="/about" className='flat-button'>{data.btnAbout}</Link>
+                            </div>
                         </div>
                     </div>
+                    <section className='section'>
+                        <BlogPreview />
+                    </section>
+                    <section className='section'>
+                        {/* <ProjectsPreview /> */}
+                        <Projects />
+                    </section>
                 </div>
-                <section className='section'>
-                    <BlogPreview />
-                </section>
-                <section className='section'>
-                    {/* <ProjectsPreview /> */}
-                    <Projects />
-                </section>
             </div> 
         )
         : 
