@@ -44,9 +44,8 @@
 }
 .flip-card-back p {
     text-align: center;
-    margin: 1rem;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
+    margin: 5px;
+    line-height: 1rem;
 }
 .flip-card-back p span {
     display: block;
@@ -72,7 +71,7 @@
     margin: 5px 0;
   
     & a {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-family: 'Coolvetica';
       z-index: 42;
       position: relative;

@@ -1,25 +1,26 @@
-import { useEffect, useMemo, useState, useContext } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import Loader from 'react-loaders'
 
-import ContactPresentation from './ContactPresentation'
 import en from '../../locales/en.json'
 import fr from '../../locales/fr.json'
 
+import ContactPresentation from './ContactPresentation'
 import { LanguageContext } from '../Layout';
 
 const ContactContainer = () => {
   const [contactData, setContactData] = useState({});
-
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
-    if (aboutData[language]) {
+    if (contactData[language]) {
       return;
     }
     language === 'fr' ? setContactData(fr.contact) : setContactData(en.contact);
   }, [language, contactData, setContactData])
 
-  if(!Object.keys(aboutData).length || !Object.keys(technologyList).length) {
+
+
+  if(!Object.keys(contactData).length) {
     return <Loader type="pacman" />
   } 
 
@@ -28,8 +29,6 @@ const ContactContainer = () => {
         contactData={contactData} 
     />
   )
-
-
 }
 
 export default ContactContainer;

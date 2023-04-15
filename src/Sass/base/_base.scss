@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+  font-size: 16px;
+}
   
 a {
     text-decoration: none;
@@ -8,7 +12,7 @@ a {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1rem;
     color: $secondaryColor;
     font-family: 'Coolvetica';
     letter-spacing: 1px;
@@ -32,7 +36,7 @@ p {
 }
 
 h1 {
-    font-size: 3.125em;
+    font-size: 3.125rem;
     font-family: "Coolvetica";
     color: $primaryColor;
     font-weight: 400;
@@ -83,7 +87,7 @@ h2 {
     font-family: 'Coolvetica';
     letter-spacing: 1px;
     color: $primaryColor;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 400;
     position: relative;
     text-transform: capitalize;
@@ -121,7 +125,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2rem;
     margin:0;
     font-family: 'Coolvetica';
     letter-spacing: 1px;
@@ -148,7 +152,7 @@ figure {
   padding: 0;
 
   figcaption {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: $secondaryColor;
     display: flex;
     justify-content: center;

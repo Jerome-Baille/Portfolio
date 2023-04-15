@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals'
 import { HashRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
-import ScrollToTop from './components/scrollToTop'
+import ScrollToTop from './features/scrollToTop'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

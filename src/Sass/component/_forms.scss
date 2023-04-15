@@ -1,89 +1,70 @@
-.contact-form {
-    width: 100%;
-    margin-top: 50px;
-    position: relative;
-    animation: apparition-short 3s ease-in-out;   
+// .contact-form {
+//     width: 100%;
+//     margin-top: 50px;
+//     position: relative;
+//     animation: apparition-short 3s ease-in-out;   
 
-    &:before {
-      content: "<form>";
-      font-family: "La Belle Aurore", cursive;
-      color: $secondaryColor;
-      font-size: 14px;
-      position: absolute;
-      left: 0;
-      opacity: 0.6;
-      top: -30px;
-      line-height: 18px;
-    }
+//     &:before {
+//       content: "<form>";
+//       font-family: "La Belle Aurore", cursive;
+//       color: $secondaryColor;
+//       font-size: 14px;
+//       position: absolute;
+//       left: 0;
+//       opacity: 0.6;
+//       top: -30px;
+//       line-height: 18px;
+//     }
 
-    &:after {
-      content: "</form>";
-      font-family: "La Belle Aurore", cursive;
-      color: $secondaryColor;
-      font-size: 14px;
-      line-height: 14px;
-      position: absolute;
-      left: -20px;
-      bottom: 50px;
-      margin-left: 20px;
-      opacity: 0.6;
-    }
+//     &:after {
+//       content: "</form>";
+//       font-family: "La Belle Aurore", cursive;
+//       color: $secondaryColor;
+//       font-size: 14px;
+//       line-height: 14px;
+//       position: absolute;
+//       left: -20px;
+//       bottom: 50px;
+//       margin-left: 20px;
+//       opacity: 0.6;
+//     }
   
-    input[type='text'],
-    input[type='email'] {
-      width: 100%;
-      border: 0;
-      background: $primaryColor;
-      height: 50px;
-      font-size: 16px;
-      color: $backgroundColor;
-      padding: 0 20px;
-      box-sizing: border-box;
-      text-transform: capitalize;
+//     input,
+//     textarea {
+//       width: 100%;
+//       border: 0;
+//       background: $primaryColor !important;
+//       height: 50px;
+//       font-size: 16px;
+//       color: $backgroundColor !important;
+//       padding: 0 20px;
+//       box-sizing: border-box;
+//       margin-bottom: 2rem;
+//       border-radius: 8px;
+//       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
 
-      &::placeholder {
-        color: $backgroundColor;
-      }
-    }
+//       &:focus {
+//         outline: none;
+//       }
+
+//       &::placeholder {
+//         color: $backgroundColor !important;
+//       }
+//     }
   
-    textarea {
-      width: 100%;
-      border: 0;
-      background: $primaryColor;
-      height: 50px;
-      font-size: 16px;
-      color: $backgroundColor;
-      padding: 20px;
-      box-sizing: border-box;
-      min-height: 150px;
+//     input {
+//       text-transform: capitalize;
+//     }
 
-      &::placeholder {
-        color: $backgroundColor;
-      }
-    }
+//     .half {
+//         width: 49%;
+//         margin-left: 2%;
+//         float: left;
+//         clear: none;
 
-    input, textarea {
-        margin-bottom: 2rem;
-        border-radius: 8px;
-      
-        &:focus {
-          outline: none;
-        }
-    }
-      
-    input, textarea {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    }
-
-    .half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-}
+//         &:first-child {
+//             margin-left: 0;
+//         }
+//     }
+// }
 

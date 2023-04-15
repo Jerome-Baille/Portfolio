@@ -34,32 +34,32 @@ const ProjectsPresentation = ({
                     <div className="flip-card-container" key={index}>
                         <div className="flip-card">
                             <div className="flip-card-front">
-                                <img src={process.env.PUBLIC_URL + projectDataGeneric[project].logo} alt={projectsDataLocale[project].title + ' logo'} />
+                                <img src={process.env.PUBLIC_URL + projectDataGeneric[project]?.logo} alt={projectsDataLocale[project]?.title + ' logo'} />
                             </div>
                             <div className="flip-card-back">
                                 <h3>
-                                    {projectsDataLocale[project].title}
+                                    {projectsDataLocale[project]?.title}
                                 </h3>
-                                <p>{projectsDataLocale[project].subtitle}</p>
-                                <p>{projectDataGeneric[project].tags.split(',').map(item => `#${item.trim()}`).join(' ')}</p>
+                                <p>{projectsDataLocale[project]?.subtitle}</p>
+                                <p>{projectDataGeneric[project]?.tags.split(',').map(item => `#${item.trim()}`).join(' ')}</p>
                                 <div className='card-footer'>
                                     <a 
-                                        href={projectDataGeneric[project].github} 
+                                        href={projectDataGeneric[project]?.github} 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
                                         className='github-link' 
-                                        aria-label={projectsDataLocale[project].title + ' GitHub'}
+                                        aria-label={projectsDataLocale[project]?.title + ' GitHub'}
                                     >
                                         <FontAwesomeIcon icon={faGithub} />
                                     </a>
 
                                     {projectDataGeneric[project].demo? 
                                         <a 
-                                            href={projectDataGeneric[project].demo} 
+                                            href={projectDataGeneric[project]?.demo} 
                                             target="_blank" 
                                             rel="noopener noreferrer" 
                                             className='demo-link' 
-                                            aria-label={projectsDataLocale[project].title + ' live demo'}
+                                            aria-label={projectsDataLocale[project]?.title + ' live demo'}
                                         >
                                             <FontAwesomeIcon icon={faInternetExplorer} />
                                         </a> 
@@ -67,9 +67,9 @@ const ProjectsPresentation = ({
                                     }
                                 </div>
                                 <Link 
-                                    to={`/projects/${projectDataGeneric[project].id}`} 
+                                    to={`/projects/${projectDataGeneric[project]?.id}`} 
                                     className="card-link" 
-                                    aria-label={'See more about ' + projectsDataLocale[project].title} 
+                                    aria-label={'See more about ' + projectsDataLocale[project]?.title} 
                                 />
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const ProjectsPresentation = ({
                 ))}
                 </div>
             </section>
-    </div>
+        </div>
     );
 };
 

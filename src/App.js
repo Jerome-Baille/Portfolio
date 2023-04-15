@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About/AboutContainer';
-import Contact from './components/Contact';
-import Layout from './components/Layout';
-import Projects from './components/Projects/ProjectsContainer';
-import SinglePage from './components/Projects/ProjectsDetailPage/ProjectsDetailContainer';
-import Error from './components/Error';
+import Home from './features/Home';
+import About from './features/About/AboutContainer';
+import Contact from './features/Contact/ContactContainer';
+import Layout from './features/Layout';
+import Projects from './features/Projects/ProjectsContainer';
+import SinglePage from './features/Projects/ProjectsDetailPage/ProjectsDetailContainer';
+import Error from './features/Error';
 import './App.scss';
-import Blog from './components/Blog';
-import HundredDaysChallenge from './components/HundredDaysChallenge';
-import Training from './components/Training';
+import Blog from './features/Blog';
+import HundredDaysChallenge from './features/HundredDaysChallenge';
+import Training from './features/Training';
 
 
 

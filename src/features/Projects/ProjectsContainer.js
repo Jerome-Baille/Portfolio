@@ -9,12 +9,9 @@ import { LanguageContext } from '../Layout';
 const ProjectsContainer = () => {
     const { language } = useContext(LanguageContext);
     const [projectsDataLocale, setProjectsDataLocale] = useState({});
-    const [projectDataGeneric, setProjectsDataGeneric] = useState();
+    const [projectDataGeneric, setProjectsDataGeneric] = useState({});
 
     useEffect(() => {
-        if (projectsDataLocale[language]) {
-            return;
-        }
         setProjectsDataLocale(language === 'fr' ? fr.projects : en.projects);
         setProjectsDataGeneric(projectList);
     }, [language, projectsDataLocale]);
