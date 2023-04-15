@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AnimatedLetters from '../..components/AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 
 const AboutPresentation = ({ 
     descriptionButtonType, 

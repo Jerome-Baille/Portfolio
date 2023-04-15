@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import { getHundredDaysOfCSS } from '../../services/service'
 
 // import { getAbout, getStack } from '../../services/service';

@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import AnimatedLetters from '../../AnimatedLetters';
+import AnimatedLetters from '../../../components/AnimatedLetters';
 import Loader from "react-loaders";
 import { getCertifications, getChallenges } from '../../../services/service';
 import { Link } from 'react-router-dom';
