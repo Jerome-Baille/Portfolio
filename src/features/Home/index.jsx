@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../components/AnimatedLetters';
 import Typewriter from "typewriter-effect";
 // import ProjectsPreview from '../Projects/ProjectsPreview';
 import Loader from 'react-loaders';

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import ContactFormContainer from './ContactForm/ContactFormContainer';
 
 const ContactPresentation = ({ 

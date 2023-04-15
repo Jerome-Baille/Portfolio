@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import { LanguageContext } from '../Layout'
 
 const Training = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../..components/AnimatedLetters'
 
 const Error404 = () => {
     const [letterClass, setLetterClass] = useState('text-animate')

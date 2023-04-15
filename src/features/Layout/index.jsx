@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar';
-import Particle from '../Particle';
+import Particle from '../../components/Particle';
 
 // create a context for the languages
 export const LanguageContext = React.createContext();

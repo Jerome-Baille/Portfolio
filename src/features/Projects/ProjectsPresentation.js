@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../../components/AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
