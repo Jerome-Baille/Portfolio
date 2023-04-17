@@ -1,0 +1,44 @@
+{
+    "OpenClassroomsWebDeveloper": {
+        "status" : "completed",
+        "author" : "OpenClassrooms",
+        "url" : "https://openclassrooms.com/fr/paths/185-developpeur-web",
+        "img" : "/images/Blog/openClassrooms.png"
+    },
+    "MetaFrontendDeveloper": {
+        "status" : "completed",
+        "author" : "Meta",
+        "url" : "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+        "img" : "/images/Blog/meta.svg"
+    },
+    "GoogleUXDesign": {
+        "status" : "inProgress",
+        "author" : "Google",
+        "url" : "https://www.coursera.org/professional-certificates/google-ux-design",
+        "img" : "/images/Blog/google.svg"   
+    },
+    "MetaBackendDeveloper": {
+        "status" : "inProgress",
+        "author" : "Meta",
+        "url" : "https://www.coursera.org/professional-certificates/meta-back-end-developer",
+        "img" : "/images/Blog/meta.svg"
+    },
+    "GoogleProjectManager": {
+        "status" : "planned",
+        "author" : "Google",
+        "url" : "https://www.coursera.org/professional-certificates/google-project-management",
+        "img" : "/images/Blog/google.svg"   
+    },
+    "AWSCloudPractitionerEssentials": {
+        "status" : "planned",
+        "author" : "AWS",
+        "url" : "https://www.coursera.org/learn/aws-cloud-practitioner-essentials",
+        "img" : "/images/Blog/aws.svg"   
+    },
+    "AWSDevOps":{
+        "status" : "planned",
+        "author" : "AWS",
+        "url" : "https://www.coursera.org/specializations/aws-devops",
+        "img" : "/images/Blog/aws.svg"   
+    }
+}

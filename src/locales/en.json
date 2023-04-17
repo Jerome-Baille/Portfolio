@@ -1,4 +1,14 @@
 {
+    "home": {
+        "greeting": "Hello,",
+        "name": "I'm Jérôme,",
+        "job": "Web Developer.",
+        "type1": "Front-End | Back-End",
+        "type2": "Open for work",
+        "type3": "Full remote only",
+        "btnContact": "Let's Talk",
+        "btnAbout": "Know More About Me"
+    },
     "about" : {
         "greetings" : "Hello there",
         "shortBtn": "Short",
@@ -230,5 +240,60 @@
             },
             "btnContact": "SEND"
           }    
+    },
+    "certifications" : {
+        "title": "Collection of Certifications",
+        "subtitle": "As a developer, I understand the importance of continuous learning and professional development. Here, you'll find a showcase of my achievements and ongoing efforts to enhance my skills and knowledge in the field. Whether it's a course completed, a certification earned, or a diploma attained, I'm proud to share my journey with you.",
+        "filters": {
+            "label": "Filter by status",
+            "type": {
+                "all": "All",
+                "completed": "Completed",
+                "inProgress": "In Progress",
+                "planned": "Planned"
+            }
+        },
+        "modal": {
+            "author": "Author",
+            "type": "Type",
+            "content": "Content",
+            "source": "Source",
+            "close": "Close"
+        },
+        "OpenClassroomsWebDeveloper": {
+            "name" : "Web Developer",
+            "type" : "Credited Professional Certificate",
+            "descriptions" : "Build a responsive and dynamic website. \nCreate APIs and databases. \nOptimize the performance and carry out the maintenance of already existing web sites. \nManage a web project from A to Z."
+        },
+        "MetaFrontendDeveloper": {
+            "name" : "Front-end Developer",
+            "type" : "Professional Certificate",
+            "descriptions" : "Introduction to Front-End Development. \nProgramming with JavaScript. \nVersion Control. \nHTML and CSS in depth. \nReact Basics. \nAdvanced React. \nPrinciples of UI/UX Design. \nFront-End Developer Capstone. \nCoding Interview Preparation."
+        },
+        "GoogleUXDesign": {
+            "name" : "UX Design",
+            "type" : "Professional Certificate",
+            "descriptions" : "Foundations of User Experience (UX) Design. \nStart the UX Design Process: Empathize, Define, and Ideate. \nBuild Wireframes and Low-Fidelity Prototypes. \nConduct UX Research and Test Early Concepts. \nCreate High-Fidelity Designs and Prototypes in Figma. \nResponsive Web Design in Adobe XD. \nDesign a User Experience for Social Good & Prepare for Jobs."
+        },
+        "MetaBackendDeveloper": {
+            "name" : "Back-end Developer",
+            "type" : "Professional Certificate",
+            "descriptions" : "Introduction to Back-End Development. \nProgramming with Python. \nVersion Control. \nDatabases. \nDjango Web Framework. \nAPIs. \nThe Full Stack. \nCloud Computing. \nBack-End Developer Capstone. \nCoding Interview Preparation."
+        },
+        "GoogleProjectManager": {
+            "name" : "Project Manager",
+            "type" : "Professional Certificate",
+            "descriptions" : "Foundations of Project Management. \nProject Initiation: Starting a Successful Project. \nProject Planning: Putting It All Together. \nProject Execution: Running the Project. \nCapstone: Applying Project Management in the Real World."
+        },
+        "AWSCloudPractitionerEssentials": {
+            "name" : "AWS Cloud Practitioner Essentials",
+            "type" : "Courses",
+            "descriptions" : "Introduction to Amazon Web Services, Compute in the Cloud. \nGlobal Infrastructure and Reliability, Networking. \nStorage and Databases, Security. \nMonitoring and Analytics, Pricing and Support. \nMigration and Innovation, The Cloud Journey. \nAWS Certified Cloud Practitioner Basics."
+        },
+        "AWSDevOps":{
+            "name" : "DevOps on AWS",
+            "type" : "Specializations",
+            "descriptions" : "AWS Cloud Technical Essentials. \nDevOps on AWS: Code, Build, and Test. \nDevOps on AWS: Release and Deploy. \nDevOps on AWS: Operate and Monitor."
+        }
     }
 }

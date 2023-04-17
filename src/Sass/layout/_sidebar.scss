@@ -69,79 +69,8 @@
         position: relative;
         text-decoration: none;
   
-        i {
-          transition: all 0.3s ease-out;
-        }
-  
         &:hover {
           color: $secondaryColor;
-  
-          svg {
-            opacity: 0;
-          }
-  
-          &:after {
-            opacity: 1;
-          }
-        }
-  
-        &:after {
-          content: '';
-          font-size: 9px;
-          letter-spacing: 1px;
-          position: absolute;
-          bottom: 0;
-          display: block;
-          width: 100%;
-          text-align: center;
-          opacity: 0;
-          -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
-        }
-      }
-
-      a.home-link--en {
-        &:after {
-          content: 'HOME';
-        }
-      }
-      a.home-link--fr {
-        &:after {
-          content: 'ACCUEIL';
-        }
-      }
-  
-      a.about-link--en {
-        &:after {
-          content: 'ABOUT';
-        }
-      }
-      a.about-link--fr {
-        &:after {
-          content: 'A PROPOS';
-        }
-      }
-  
-      a.contact-link {
-        &:after {
-          content: 'CONTACT';
-        }
-      }
-  
-      a.projects-link--en {
-        &:after {
-          content: 'PROJECTS';
-        }
-      }
-      a.projects-link--fr {
-        &:after {
-          content: 'PROJETS';
-        }
-      }
-
-      a.blog-link {
-        &:after {
-          content: 'BLOG';
         }
       }
   

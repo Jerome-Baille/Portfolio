@@ -19,19 +19,11 @@ p {
     font-weight: 300;
     max-width: -moz-fit-content;
     max-width: fit-content;
-    animation: pulse 1s;
     text-align: justify;
     white-space: pre-wrap;
 
     &:last-of-type{
       margin-bottom: 3rem;
-    }
-
-
-    @for $i from 1 through 10 {
-      &:nth-child(#{$i}) {
-        animation-delay: 1.1s+$i*0.2s;
-      }
     }
 }
 
@@ -75,7 +67,6 @@ h1 {
         width: auto;
         height: 45px;
         margin-left: 20px;
-        animation: handWave 5s;
       }
 
       @media screen and (max-width: 768px) {
@@ -91,7 +82,6 @@ h2 {
     font-weight: 400;
     position: relative;
     text-transform: capitalize;
-    animation: apparition 3s ease-in-out;
     margin:0;
 
     &:before {
@@ -130,7 +120,6 @@ h3 {
     font-family: 'Coolvetica';
     letter-spacing: 1px;
     color: $primaryColor;
-    animation: apparition 3s ease-in-out;
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
@@ -159,4 +148,14 @@ figure {
     align-items: center;
     padding: 10px;
   }
+}
+
+.accent-color {
+    color: $primaryColor;
+    font-weight: bold;
+}
+
+.animation-container {
+  width: 100%;
+  overflow: hidden;
 }

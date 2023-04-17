@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from "react-router-dom";
-import AnimatedLetters from '../../../components/AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -11,14 +10,7 @@ const ProjectsDetailPresentation = ({
     projectsDataLocale,
     technologyList
 }) => {
-    const [letterClass, setLetterClass] = useState('text-animate');
     const navigate = useNavigate();
-
-    useEffect(() => {
-        setTimeout(() => {
-        setLetterClass('text-animate-hover');
-        }, 4000);
-    }, []);
 
     const handleTagsLink = (tag, index) => {
         const matchingItem = Object.values(technologyList).find(item => item.id.toUpperCase() === tag.trim().toUpperCase());
@@ -41,11 +33,7 @@ const ProjectsDetailPresentation = ({
                 </button>
                 <div className="text-column">
                     <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={projectsDataLocale.title.split('')}
-                            idx={15}
-                        />
+                        {projectsDataLocale.title}
                     </h1> 
                     <div className="subtitle">
                         <h2>{projectsDataLocale.subtitle}</h2>

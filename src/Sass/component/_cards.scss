@@ -293,3 +293,12 @@
     color: #967bb6;
   }
 }
+
+
+.card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  animation: slideUp 3s ease-in-out;
+}

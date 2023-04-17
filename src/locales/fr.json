@@ -1,4 +1,14 @@
 {
+    "home": {
+        "greeting": "Bonjour,",
+        "name": "Je suis Jérôme,",
+        "job": "Développeur Web.",
+        "type1": "Front-End | Back-End",
+        "type2": "A l'écoute d'opportunités",
+        "type3": "Télétravail à 100%",
+        "btnContact": "Discutons",
+        "btnAbout": "En Savoir Plus"
+    },
     "about" : {
     "greetings" : "Bonjour",
     "shortBtn" : "court",
@@ -229,6 +239,61 @@
             }
         },
           "btnContact": "ENVOYER"
+        }
+    },
+    "certifications" : {
+        "title": "Collection de Certificats",
+        "subtitle": "En tant que développeur, je comprends l'importance de l'apprentissage continu et du développement professionnel. Vous trouverez ici une vitrine de mes réalisations et de mes efforts continus pour améliorer mes compétences et mes connaissances dans le domaine. Qu'il s'agisse d'un cours, d'une certification ou d'un diplôme, je suis fier de partager mon parcours avec vous.",
+        "filters": {
+            "label": "Filtrer par statut",
+            "type": {
+                "all": "Tous",
+                "completed": "Terminé",
+                "inProgress": "En Cours",
+                "planned": "A Venir"
+            }
+        },
+        "modal": {
+            "author": "Auteur",
+            "type": "Type",
+            "content": "Contenu",
+            "source": "Source",
+            "close": "Fermer"
+        },
+        "OpenClassroomsWebDeveloper": {
+            "name" : "Développeur Web",
+            "type" : "RNCP Niveau 5",
+            "descriptions" : "Construire un site web responsive et dynamique. \nCréer des API et des bases de données. \nOptimiser les performances et réaliser la maintenance de sites web déjà existants. \nGérer un projet web de A à Z."
+        },
+        "MetaFrontendDeveloper": {
+            "name" : "Développeur Front-end",
+            "type" : "Certificat Professionnel",
+            "descriptions" : "Introduction au développement Front-End, \nProgrammation avec JavaScript, \nContrôle de version, \nHTML et CSS avancés, \nLes bases de React, \nReact avancé, \nPrincipes de conception UI/UX, \nPierre angulaire du développeur Front-End, \nPréparation à l'entretien d'embauche"
+        },
+        "GoogleUXDesign": {
+            "name" : "Conception UX",
+            "type" : "Certificat Professionnel",
+            "descriptions" : "Fondements de la conception de l'expérience utilisateur (UX), \nDémarrer le processus de conception UX : Empathiser, définir et imaginer, \nConstruire des wireframes et des prototypes basse fidélité, \nMener des recherches UX et tester les premiers concepts, \nCréer des conceptions et des prototypes haute-fidélité avec Figma, \nConcevoir des sites web réactifs avec Adobe XD, \nConcevoir une expérience utilisateur pour le bien social et se préparer à l'emploi"
+        },
+        "MetaBackendDeveloper": {
+            "name" : "Développeur Back-end",
+            "type" : "Certificat Professionnel",
+            "descriptions" : "Introduction au développement back-end, \nProgrammation en Python, \nContrôle de version, \nBases de données, \nDjango Web Framework, \nAPI, \nFull Stack, \nCloud Computing, \nPierre angulaire du développeur back-end, \nPréparation aux entretiens techniques"
+        },
+        "GoogleProjectManager": {
+            "name" : "Project Manager",
+            "type" : "Professional Certificate",
+            "descriptions" : "Fondements de la gestion de projet, \nInitiation du projet : Démarrer un projet réussi, \nPlanification de projet : La mise en place de l'ensemble, \nExécution du projet : Exécuter le projet, \nGestion de projet agile, \nCapstone : Appliquer la gestion de projet dans le monde réel"
+        },
+        "AWSCloudPractitionerEssentials": {
+            "name" : "AWS Cloud Practitioner Essentials",
+            "type" : "Cours",
+            "descriptions" : "Introduction aux services Web d'Amazon, calcul dans le nuage, \nInfrastructure globale et fiabilité, mise en réseau, \nStockage et bases de données, \nSécurité, \nSurveillance et analyse, tarification et assistance, \nMigration et innovation, le voyage dans le nuage, \nLes bases de la certification AWS (AWS Certified Cloud Practitioner Basics)"  
+        },
+        "AWSDevOps":{
+            "name" : "DevOps on AWS",
+            "type" : "Spécialisation",
+            "descriptions" : "Essentiels techniques du cloud AWS, \nDevOps sur AWS : Code, Build, and Test, \nDevOps sur AWS : Release and Deploy, \nDevOps sur AWS : Exploiter et surveiller"
         }
     }
 }

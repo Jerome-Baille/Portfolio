@@ -33,7 +33,9 @@ const CustomForm = ({ formData, onSubmit }) => {
             validationSchema={Yup.object().shape(validationSchemaFields)}
         >
         {({ isSubmitting, isValid, dirty }) => (
-            <Form>
+            <Form
+                className='contact-page__form-animation'
+            >
                 {Object.keys(formData.inputs).map((key, index) => {
                     const input = formData.inputs[key];
                     return (

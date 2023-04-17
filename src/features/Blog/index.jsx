@@ -229,7 +229,8 @@ const Blog = () => {
                                         </a>
                                     ))}
                                 </div>
-                            : <div className="card-body"><h3 className='no-data'>{page.noData}</h3></div>}
+                            : <div className="card-body"><h3 className='no-data'>{page.noData}</h3></div>
+                            }
                         </div>
 
                         <div className="card card-challenges">

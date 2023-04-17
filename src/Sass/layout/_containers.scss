@@ -27,8 +27,8 @@
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
     will-change: contents;
 }
 
@@ -86,7 +86,7 @@
     img {
       width: 50px;
       height: auto;
-      animation: apparition 3s ease-in-out;
+      animation: slideUp 3s ease-in-out;
       z-index: 20;
     }
 

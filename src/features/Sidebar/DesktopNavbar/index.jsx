@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faHourglassHalf } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import CVen from '../../../assets/pdf/EN/Jerome BAILLE - Frontend Developer.pdf';
 import CVfr from '../../../assets/pdf/FR/Jérôme BAILLE - Développeur Frontend.pdf';
@@ -20,7 +20,6 @@ function DesktopNavbar() {
                 <NavLink 
                     exact="true" 
                     activeclassname="active" 
-                    className={language==='fr' ? 'home-link--fr' : 'home-link--en'}
                     to='/' 
                     aria-label="Go to homepage"
                 >
@@ -29,7 +28,6 @@ function DesktopNavbar() {
                 <NavLink 
                     exact="true" 
                     activeclassname="active" 
-                    className={language==='fr' ? 'about-link--fr' : 'about-link--en'} 
                     to='/about' 
                     aria-label="Go to about page" 
                 >
@@ -38,7 +36,6 @@ function DesktopNavbar() {
                 <NavLink 
                     exact="true" 
                     activeclassname="active" 
-                    className={language==='fr' ? 'projects-link--fr' : 'projects-link--en'} 
                     to='/projects' 
                     aria-label="Go to projects page"
                 >
@@ -47,13 +44,17 @@ function DesktopNavbar() {
                 <NavLink 
                     exact="true" 
                     activeclassname="active" 
-                    className="blog-link" 
                     to='/blog' 
                     aria-label="Go to blog page"
                 >
-                    <FontAwesomeIcon icon={faHourglassHalf}/>
+                    <FontAwesomeIcon icon={faGraduationCap}/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to='/contact' aria-label="Go to contact page">
+                <NavLink 
+                    exact="true" 
+                    activeclassname="active"
+                    to='/contact'
+                    aria-label="Go to contact page"
+                >
                     <FontAwesomeIcon icon={faEnvelope}/>
                 </NavLink>
             </nav>
