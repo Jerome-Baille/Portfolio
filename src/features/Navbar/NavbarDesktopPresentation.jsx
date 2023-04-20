@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faHome, faBriefcase, faFilePdf, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+import './navbar.scss';
+
 function DesktopNavbar({
     dataNavbar,
     handleClick
@@ -41,7 +43,7 @@ function DesktopNavbar({
 
     return (
         <nav className='navbar'>
-            <NavLink className='logo' to='/'>
+            <NavLink className='navbar__logo' to='/'>
                 <img src={process.env.PUBLIC_URL + dataNavbar.logo} alt={dataNavbar.alt} />
             </NavLink>
             <section className='navbar__group'>
@@ -57,6 +59,7 @@ function DesktopNavbar({
                                 to={key}
                                 spy={true}
                                 onClick={handleScroll(key)}
+                                className='navbar__group__link'
                             >
                                 <FontAwesomeIcon icon={fetchIcon(key)}/>
                             </Link>
@@ -74,6 +77,7 @@ function DesktopNavbar({
                                 target="_blank"
                                 rel="noreferrer"
                                 aria-label={link.aria}
+                                className='navbar__group__link'
                             >
                                 <FontAwesomeIcon icon={fetchIcon(key)}/>
                             </a>

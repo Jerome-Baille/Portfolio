@@ -56,12 +56,28 @@
     },
     "about" : {
         "greetings" : "Hello there",
-        "shortBtn": "Short",
-        "shortDescription" : "As a freelance full-stack developer based in the south of France, I have expertise in Angular and React for front-end and Node.js for back-end development. \n\nWith my extensive background in banking, I bring exceptional negotiation skills, flexibility, and rigor to every project. \n\nFrom static landing pages to e-commerce websites, I have worked on a variety of projects with autonomy and precision. \n\nIf you would like to learn more about me and my experience, please do not hesitate to contact me.",
-        "mediumBtn": "Medium",
-        "mediumDescription": "I am Jérôme, a freelance full-stack developer based in the south of France. \n\nWith a passion for new technologies, I have been developing web applications for various clients using Angular and React for front-end and Node.js for back-end development. \n\nMy extensive background in the banking sector has given me exceptional negotiation skills, flexibility, and rigor which I bring to every project I work on. \n\nMy expertise in both front-end and back-end development has enabled me to create clean and sharp code that generates accessible, user-friendly, and high-performing web applications. \n\nFrom static landing pages to e-commerce websites, I have worked on a variety of projects with autonomy and precision. \n\nAs a determined and tenacious developer, I am always eager to take on new challenges and put my diverse skill set to use in ambitious projects. \n\nIf you would like to learn more about me and my experience, please do not hesitate to contact me.",
-        "longBtn": "Long",
-        "longDescription" : "I am Jérôme, a professional and passionate developer based in the south of France. \n\nOver the years, my curiosity led me to explore different aspects of new technologies including 2 years as ambassador for Microsoft France (Microsoft’s “House of Fans” program). \n\nAfter a career in the banking sector, where I acquired and sharpened my listening skills, my flexibility and my rigor, I decided to get back to my true passion: coding. With great determination, I went back to school to finally get certificated in Web Development. \n\nThroughout this journey, I carried out multiple professional projects in perfect autonomy and precision. \n\nAt this moment, I am tenaciously looking to put my diverse and rich background at the service of ambitious and challenging projects. \n\nThanks to the manifold projects I have worked on, I have been able to manage both the front and the back end, giving me as global vision of the development of a web application. \n\nMy goal is to create a clean and sharp code that generates a web app that is both accessible, user-friendly and performing. \n\nIf you would like to know more about me and my projects feel free to contact me! \n\nWith my best regards,"
+        "signature": {
+            "src": "/images/about/Signature.png",
+            "alt": "Handwriten signature of Jerome."
+        },
+        "profilePicture": {
+            "src": "/images/about/DSC_0703_2.JPG",
+            "alt": "Jerome looking to his left. The picture is in black and white."
+        },
+        "descriptions": {
+            "short": {
+                "label": "Short",
+                "content": "As a freelance full-stack developer based in the south of France, I have expertise in Angular and React for front-end and Node.js for back-end development. \n\nWith my extensive background in banking, I bring exceptional negotiation skills, flexibility, and rigor to every project. \n\nFrom static landing pages to e-commerce websites, I have worked on a variety of projects with autonomy and precision. \n\nIf you would like to learn more about me and my experience, please do not hesitate to contact me. \n\nWith my best regards,"
+            },
+            "medium": {
+                "label": "Medium",
+                "content":"I am Jérôme, a freelance full-stack developer based in the south of France. \n\nWith a passion for new technologies, I have been developing web applications for various clients using Angular and React for front-end and Node.js for back-end development. \n\nMy extensive background in the banking sector has given me exceptional negotiation skills, flexibility, and rigor which I bring to every project I work on. \n\nMy expertise in both front-end and back-end development has enabled me to create clean and sharp code that generates accessible, user-friendly, and high-performing web applications. \n\nFrom static landing pages to e-commerce websites, I have worked on a variety of projects with autonomy and precision. \n\nAs a determined and tenacious developer, I am always eager to take on new challenges and put my diverse skill set to use in ambitious projects. \n\nIf you would like to learn more about me and my experience, please do not hesitate to contact me. \n\nWith my best regards,"
+            },
+            "long":{
+                "label": "Long",
+                "content": "I am Jérôme, a professional and passionate developer based in the south of France. \n\nOver the years, my curiosity led me to explore different aspects of new technologies including 2 years as ambassador for Microsoft France (Microsoft’s “House of Fans” program). \n\nAfter a career in the banking sector, where I acquired and sharpened my listening skills, my flexibility and my rigor, I decided to get back to my true passion: coding. With great determination, I went back to school to finally get certificated in Web Development. \n\nThroughout this journey, I carried out multiple professional projects in perfect autonomy and precision. \n\nAt this moment, I am tenaciously looking to put my diverse and rich background at the service of ambitious and challenging projects. \n\nThanks to the manifold projects I have worked on, I have been able to manage both the front and the back end, giving me as global vision of the development of a web application. \n\nMy goal is to create a clean and sharp code that generates a web app that is both accessible, user-friendly and performing. \n\nIf you would like to know more about me and my projects feel free to contact me! \n\nWith my best regards,"
+            }
+        }
     },
     "projects": {
         "title": "My Curated Projects",
@@ -79,9 +95,15 @@
                 "nodejs": "NodeJs"
             }
         },
+        "link": {
+            "label": "See more details about "
+        },
         "JobVisualiser": {
             "title": "Job Visualiser",
             "subtitle": "Job hunting made easy.",
+            "logo": {
+                "alt": "Dark blue circle whith 2 white curved lines inside, above the text Job Visualiser."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Mockup of the dashboard on three different devices."
@@ -124,6 +146,9 @@
         "PhoceaTravel": {
             "title": "Phocea Travel",
             "subtitle": "Responsive website for a travel agency.",
+            "logo": {
+                "alt": "The text Phocea Travel written in blue on a white background."
+            },
             "pictures": {
                 "desktop": {
                     "alt": "Phocea Travel website on desktop"
@@ -151,6 +176,9 @@
         "OhMyFood": {
             "title": "OhMyFood",
             "subtitle": "Dynamizing a web page with CSS animations.",
+            "logo": {
+                "alt": "The text Oh my food written in black on a white background."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "OhMyFood website, first mockup."
@@ -180,6 +208,9 @@
         "LaChouetteAgence": {
             "title": "La Chouette Agence",
             "subtitle": "Optimization of an existing website.",
+            "logo": {
+                "alt": "The outline in orange and red of a stylized owl on black background.."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "La Chouette Agence website, first mockup."
@@ -207,6 +238,9 @@
         "Kanap": {
             "title": "Kanap",
             "subtitle": "Building an e-commerce website in JavaScript.",
+            "logo": {
+                "alt": "A drawing of a sofa in a circle. All above the text Kanap."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Kanap website, first mockup."
@@ -234,6 +268,9 @@
         "Piiquante": {
             "title": "Piiquante",
             "subtitle": "Building an API for a food review application.",
+            "logo": {
+                "alt": "A drawing of a pepper above the text Piiquante."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Piiquante website, first mockup."
@@ -260,6 +297,9 @@
         "Groupomania": {
             "title": "Groupomania",
             "subtitle": "Creation of a company social network.",
+            "logo": {
+                "alt": "A circle in which you can see a grid. The whole above the text Groupomania."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "website, first mockup."
@@ -287,7 +327,7 @@
     },
     "contact": {
         "title": "Contact Me",
-        "subtitle": "If you want to know more about me or my projects, feel free to use the form below. \nI am looking for a fully remote front-end, back-end or full-stack job.",
+        "subtitle": "If you want to know more about me or my projects, feel free to use the form below. I will answer you as soon as possible.",
         "form" : {
             "inputs": {
                 "name": {
@@ -372,6 +412,20 @@
             "name" : "DevOps on AWS",
             "type" : "Specializations",
             "descriptions" : "AWS Cloud Technical Essentials. \nDevOps on AWS: Code, Build, and Test. \nDevOps on AWS: Release and Deploy. \nDevOps on AWS: Operate and Monitor."
+        }
+    },
+    "error": {
+        "404": {
+            "title": "Oops! Error 404",
+            "subtitle": "The page you are looking for does not exist.",
+            "description": "Just click the button bellow to safely return home!",
+            "btnHome": "HOME"
+        },
+        "500": {
+            "title": "Oops! Error 500",
+            "subtitle": "An error has occurred on the server. Please try again later.",
+            "description": "Just click the button bellow to safely return home!",
+            "btnHome": "HOME"
         }
     }
 }

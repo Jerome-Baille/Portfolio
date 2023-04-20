@@ -8,31 +8,29 @@ import fr from '../../locales/fr.json'
 import { LanguageContext } from '../Layout/MainLayout';
 
 const AboutContainer = () => {
-  const profilePicture = '/images/about/DSC_0703_2.JPG'
-  const signature = '/images/about/Signature.png'
   const [aboutData, setAboutData] = useState({});
   const [descriptionButtonType, setDescriptionButtonType] = useState('medium');
 
   const { language } = useContext(LanguageContext);
 
   const descriptionOptions = [
-    { label: aboutData.shortBtn, value: 'short' },
-    { label: aboutData.mediumBtn, value: 'medium' },
-    { label: aboutData.longBtn, value: 'long' },
+    { label: aboutData.descriptions?.short.label, value: 'short' },
+    { label: aboutData.descriptions?.medium.label, value: 'medium' },
+    { label: aboutData.descriptions?.long.label, value: 'long' },
   ];
   
   const descriptionLengthButtons = (
-    <div className='descriptionType-container'>
-      {descriptionOptions.map((option) => (
-        <button
-          key={option.value}
-          className={`flat-button ${option.value === descriptionButtonType ? 'active' : ''}`}
-          onClick={() => setDescriptionButtonType(option.value)}
-        >
-          {option.label}
-        </button>
-      ))}
-    </div>
+    <>
+    {descriptionOptions.map((option) => (
+      <button
+        key={option.value}
+        className={`flat-button ${option.value === descriptionButtonType ? 'active' : ''}`}
+        onClick={() => setDescriptionButtonType(option.value)}
+      >
+        {option.label}
+      </button>
+    ))}
+    </>
   );
 
   useEffect(() => {
@@ -56,8 +54,6 @@ const AboutContainer = () => {
         aboutData={aboutData} 
         technologyList={technologyList} 
         descriptionLengthButtons={descriptionLengthButtons} 
-        profilePicture={profilePicture}
-        signature={signature}
     />
   )
 

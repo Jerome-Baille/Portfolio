@@ -1,0 +1,18 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+@import '../../Sass/utils/variables';
+
+.certifications {
+    &__section {
+        padding-top: $paddingTopSection;
+        @include flexColCenter;
+        row-gap: 1.5rem;
+    }
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1rem;
+    }
+}

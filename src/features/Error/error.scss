@@ -1,0 +1,21 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+
+.error {
+    @include flexColCenter;
+    width: 100%;
+
+    &__text {
+        @include flexColCenter;
+        text-align: center;
+        row-gap: 2rem;
+    }
+
+    &__header {
+        @include flexColCenter;
+    }
+
+    &__button {
+        @include flexColCenter;
+    }
+}

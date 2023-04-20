@@ -1,0 +1,15 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+@import '../../Sass/utils/variables';
+
+.contact {
+    &__section {
+        padding-top: $paddingTopSection;
+        @include flexColCenter;
+        row-gap: 1.5rem;
+    }
+
+    &__header {
+        @include flexColCenter;
+    }
+}

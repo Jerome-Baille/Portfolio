@@ -55,13 +55,29 @@
         }
     },
     "about" : {
-    "greetings" : "Bonjour",
-    "shortBtn" : "court",
-    "shortDescription" : "Je suis Jérôme, un développeur full-stack freelance basé dans le sud de la France, utilisant Angular et React pour le front-end et Node.js pour le back-end. \n\nGrâce mon expérience approfondie dans le secteur bancaire, j'apporte des capacités de négotiation exceptionnelles, de la flexibilité et de la rigueur à chaque projet. \n\nDes landing pages aux sites de e-commerce, j'ai travaillé sur une variété de projets avec autonomie et précision. \n\nSi vous souhaitez en savoir plus sur moi et mon expérience, n'hésitez pas à me contacter.",
-    "mediumBtn" : "moyen",
-    "mediumDescription": "Je suis Jérôme, un développeur full-stack freelance basé dans le sud de la France. \n\nPassionné par les nouvelles technologies, j'ai développé des applications web pour divers clients en utilisant Angular et React pour le front-end et Node.js pour le développement back-end. \n\nMa vaste expérience dans le secteur bancaire m'a permis d'acquérir des compétences exceptionnelles en matière de négociation, de flexibilité et de rigueur que j'apporte à chaque projet sur lequel je travaille. \n\nMon expertise en développement front-end et back-end me permet d'écrire un code propre et précis qui génère des applications web accessibles, conviviales et performantes. \n\nDes landing pages statiques aux sites de e-commerce, j'ai travaillé sur une variété de projets avec autonomie et précision. En tant que développeur déterminé et tenace, je suis toujours prêt à relever de nouveaux défis et à mettre mes diverses compétences au service de projets ambitieux. \n\nSi vous souhaitez en savoir plus sur moi et mon expérience, n'hésitez pas à me contacter.",
-    "longBtn" : "long",
-    "longDescription" : "Je suis Jérôme, un développeur professionnel et passionné basé dans le sud de la France. \n\nAu fil des années, ma curiosité et mon amour pour les nouvelles technologies m'ont conduit à explorer différentes facettes de ce domaine en constante évolution. \n\nAprès avoir fait carrière dans le secteur bancaire, j'ai acquis et développé des compétences précieuses telles que l'écoute active, la flexibilité et la rigueur. \n\nJ'ai ensuite eu la chance de faire partie du programme 'House of Fans' de Microsoft France en tant qu'ambassadeur. \n\nCette expérience m'a permis de rencontrer de nombreux professionnels du secteur et m'a poussé à faire de ma passion de toujours un véritable métier. \n\nC'est ainsi que j'ai décidé de me former en autodidacte. Puis, pour valider mes compétences et acquérir une certification reconnue, j'ai décidé de reprendre le chemin de l'école pour obtenir un diplôme en développement web. \n\nDurant cette période, j'ai pû réaliser différents projets professionnels, en parfaite autonomie et en appliquant les compétences que j'avais acquises en autodidacte. \n\nJ'ai pu ainsi développer une approche pragmatique et méthodique, en combinant les connaissances théoriques avec une expérience pratique significative. \n\nAujourd'hui, je suis déterminé à mettre mon parcours riche et varié au service de projets ambitieux et stimulants. \n\nGrâce aux multiples projets sur lesquels j'ai travaillé, j'ai acquis une vision globale du développement d'une application web, en étant capable de gérer à la fois le front-end et le back-end. \n\nMon objectif principal est de créer un code propre et précis qui permet de développer des applications web performantes, conviviales et accessibles. Je suis toujours à la recherche de nouvelles opportunités de développement professionnelles et je suis convaincu que mon profil polyvalent et mon engagement pour l'excellence peuvent apporter une véritable valeur ajoutée à votre entreprise. \n\nSi vous êtes intéressé par mon profil et souhaitez en savoir plus sur moi et mes projets, n'hésitez pas à me contacter ! Cordialement,"
+        "greetings" : "Bonjour",
+        "signature": {
+            "src": "/images/about/Signature.png",
+            "alt": "Signature manuscrite de Jerome."
+        },
+        "profilePicture": {
+            "src": "/images/about/DSC_0703_2.JPG",
+            "alt": "Jérôme regardant vers sa gauche. La photo est noir et blanc."
+        },
+        "descriptions": {
+            "short": {
+                "label": "Court",
+                "content": "Je suis Jérôme, un développeur full-stack freelance basé dans le sud de la France, utilisant Angular et React pour le front-end et Node.js pour le back-end. \n\nGrâce mon expérience approfondie dans le secteur bancaire, j'apporte des capacités de négotiation exceptionnelles, de la flexibilité et de la rigueur à chaque projet. \n\nDes landing pages aux sites de e-commerce, j'ai travaillé sur une variété de projets avec autonomie et précision. \n\nSi vous souhaitez en savoir plus sur moi et mon expérience, n'hésitez pas à me contacter. \n\nCordialement,"
+            },
+            "medium": {
+                "label": "Moyen",
+                "content": "Je suis Jérôme, un développeur full-stack freelance basé dans le sud de la France. \n\nPassionné par les nouvelles technologies, j'ai développé des applications web pour divers clients en utilisant Angular et React pour le front-end et Node.js pour le développement back-end. \n\nMa vaste expérience dans le secteur bancaire m'a permis d'acquérir des compétences exceptionnelles en matière de négociation, de flexibilité et de rigueur que j'apporte à chaque projet sur lequel je travaille. \n\nMon expertise en développement front-end et back-end me permet d'écrire un code propre et précis qui génère des applications web accessibles, conviviales et performantes. \n\nDes landing pages statiques aux sites de e-commerce, j'ai travaillé sur une variété de projets avec autonomie et précision. En tant que développeur déterminé et tenace, je suis toujours prêt à relever de nouveaux défis et à mettre mes diverses compétences au service de projets ambitieux. \n\nSi vous souhaitez en savoir plus sur moi et mon expérience, n'hésitez pas à me contacter. \n\nCordialement,"
+            },
+            "long": {
+                "label": "Long",
+                "content": "Je suis Jérôme, un développeur professionnel et passionné basé dans le sud de la France. \n\nAu fil des années, ma curiosité et mon amour pour les nouvelles technologies m'ont conduit à explorer différentes facettes de ce domaine en constante évolution. \n\nAprès avoir fait carrière dans le secteur bancaire, j'ai acquis et développé des compétences précieuses telles que l'écoute active, la flexibilité et la rigueur. \n\nJ'ai ensuite eu la chance de faire partie du programme 'House of Fans' de Microsoft France en tant qu'ambassadeur. \n\nCette expérience m'a permis de rencontrer de nombreux professionnels du secteur et m'a poussé à faire de ma passion de toujours un véritable métier. \n\nC'est ainsi que j'ai décidé de me former en autodidacte. Puis, pour valider mes compétences et acquérir une certification reconnue, j'ai décidé de reprendre le chemin de l'école pour obtenir un diplôme en développement web. \n\nDurant cette période, j'ai pû réaliser différents projets professionnels, en parfaite autonomie et en appliquant les compétences que j'avais acquises en autodidacte. \n\nJ'ai pu ainsi développer une approche pragmatique et méthodique, en combinant les connaissances théoriques avec une expérience pratique significative. \n\nAujourd'hui, je suis déterminé à mettre mon parcours riche et varié au service de projets ambitieux et stimulants. \n\nGrâce aux multiples projets sur lesquels j'ai travaillé, j'ai acquis une vision globale du développement d'une application web, en étant capable de gérer à la fois le front-end et le back-end. \n\nMon objectif principal est de créer un code propre et précis qui permet de développer des applications web performantes, conviviales et accessibles. Je suis toujours à la recherche de nouvelles opportunités de développement professionnelles et je suis convaincu que mon profil polyvalent et mon engagement pour l'excellence peuvent apporter une véritable valeur ajoutée à votre entreprise. \n\nSi vous êtes intéressé par mon profil et souhaitez en savoir plus sur moi et mes projets, n'hésitez pas à me contacter ! \n\nCordialement,"
+            }
+        }
     },
     "projects": {
         "title": "Sélection de Projets",
@@ -79,9 +95,15 @@
                 "nodejs": "NodeJs"
             }
         },
+        "link": {
+            "label": "Voir plus de détails à propos de  "
+        },
         "JobVisualiser": {
             "title": "Job Visualiser",
             "subtitle": "La recherche d'emploi en toute simplicité.",
+            "logo": {
+                "alt": "Cercle bleu foncé avec 2 lignes courbes blanches à l'intérieur, au-dessus du texte Job Visualiser."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Maquette du tableau de bord sur trois appareils différents."
@@ -124,6 +146,9 @@
         "PhoceaTravel": {
             "title": "Phocea Travel",
             "subtitle": "Site web responsive pour une agence de voyage.",
+            "logo": {
+                "alt": "Le texte Phocean Travel en bleu sur fond blanc."
+            },
             "pictures": {
                 "desktop": {
                     "alt": "Site internet de Phocea Travel sur ordinateur"
@@ -151,6 +176,9 @@
         "OhMyFood": {
             "title": "OhMyFood",
             "subtitle": "Dynamiser une page web avec des animations CSS.",
+            "logo": {
+                "alt": "Le texte Oh my food en noir sur fond blanc."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Site internet d'OhMyFood, première maquette."
@@ -180,6 +208,9 @@
         "LaChouetteAgence": {
             "title": "La Chouette Agence",
             "subtitle": "Optimisation d'un site web existant.",
+            "logo": {
+                "alt": "Le contour en orange et rouge d'une chouette stylisée sur fond noir."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Site internet de La Chouette Agence, first mockup."
@@ -207,6 +238,9 @@
         "Kanap": {
             "title": "Kanap",
             "subtitle": "Création d'un site e-commerce en JavaScript",
+            "logo": {
+                "alt": "Un dessin d'un canapé dans un cercle. Le tout au dessus du texte Kanap."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Site internet de Kanap, première maquette."
@@ -234,6 +268,9 @@
         "Piiquante": {
             "title": "Piiquante",
             "subtitle": "Création d'une API pour une application de critique culinaire.",
+            "logo": {
+                "alt": "Un dessin d'un piment au dessus du texte Piiquante."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Site internet de Piiquante, première maquette."
@@ -260,6 +297,9 @@
         "Groupomania": {
             "title": "Groupomania",
             "subtitle": "Création d'un réseau social d'entreprise.",
+            "logo": {
+                "alt": "Un cercle dans lequel on peut voir un quadrillage. Le tout au dessus du texte Groupomania."
+            },
             "pictures": {
                 "mockup1": {
                     "alt": "Site internet de Groupomania, première maquette."
@@ -287,7 +327,7 @@
     },
     "contact": {
         "title" : "Contactez Moi",
-        "subtitle": "Si vous voulez en savoir plus sur moi ou mes projets, n'hésitez pas à utiliser le formulaire ci-dessous. \nJe recherche un emploi à temps plein en tant que développeur front-end, back-end ou full-stack.",
+        "subtitle": "Si vous voulez en savoir plus sur moi ou mes projets, n'hésitez pas à utiliser le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.",
         "form" : {
           "inputs" : { 
             "name": {
@@ -372,6 +412,20 @@
             "name" : "DevOps on AWS",
             "type" : "Spécialisation",
             "descriptions" : "Essentiels techniques du cloud AWS, \nDevOps sur AWS : Code, Build, and Test, \nDevOps sur AWS : Release and Deploy, \nDevOps sur AWS : Exploiter et surveiller"
+        }
+    },
+    "error": {
+        "404": {
+            "title": "Oops! Erreur 404",
+            "subtitle": "La page que vous recherchez n'existe pas ou a été déplacée.",
+            "description": "Cliquez sur le bouton ci-dessous pour revenir à la page d'accueil.",
+            "btnHome": "Retour à l'accueil"
+        },
+        "500": {
+            "title": "Oops! Erreur 500",
+            "subtitle": "Une erreur a eu lieu sur le serveur. Veuillez réessayer plus tard.",
+            "description": "Cliquez sur le bouton ci-dessous pour revenir à la page d'accueil.",
+            "btnHome": "Retour à l'accueil"
         }
     }
 }

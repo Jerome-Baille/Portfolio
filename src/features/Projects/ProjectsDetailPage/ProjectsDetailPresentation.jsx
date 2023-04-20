@@ -3,7 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInternetExplorer } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-// import { Link } from 'react-router-dom';
+
+import StackIconsDisplay from '../../../components/stackIconsDisplay/StackIconsDisplay';
+
+import './projectsDetailPage.scss';
+import { scroller } from 'react-scroll';
 
 const ProjectsDetailPresentation = ({ 
     projectDataGeneric, 
@@ -12,67 +16,60 @@ const ProjectsDetailPresentation = ({
 }) => {
     const navigate = useNavigate();
 
-    const handleTagsLink = (tag, index) => {
+    const handleTagsLink = (tag) => {
         const matchingItem = Object.values(technologyList).find(item => item.id.toUpperCase() === tag.trim().toUpperCase());
         if (matchingItem) {
           return (
-            <div className="stack-single" key={index}>
-                <img src={process.env.PUBLIC_URL + matchingItem.url} alt={matchingItem.name} />
-                <span>{matchingItem.name}</span>
-            </div>
+            <StackIconsDisplay key={matchingItem.id} item={matchingItem} />
           )
         } 
       }      
 
       const handleNavigation = () => {
-        navigate(-1)
+        navigate('/');
+        setTimeout(() => {
+            scroller.scrollTo('projects', {
+                smooth: true,
+                offset: 0,
+                duration: 1000,
+            });
+        }, 500);
       }
 
 
     return (
         <div className="container">
-            <section className="single-project inside-container">
+            <section className="projectsDetailPage__section inside-container">
                 <button onClick={handleNavigation} className='flat-button mr0 back-left'>
                     <FontAwesomeIcon icon={faArrowLeft} />
                     <span> {projectsDataLocale.backBtn}</span>
                 </button>
-                <div className="text-column">
-                    <h1>
-                        {projectsDataLocale.title}
-                    </h1> 
-                    <div className="subtitle">
-                        <h2>{projectsDataLocale.subtitle}</h2>
-                    </div>
+                <div className="projectsDetailPage__text">
+                    <header>
+                        <h1>
+                            {projectsDataLocale.title}
+                        </h1> 
+                        <h2>
+                            {projectsDataLocale.subtitle}
+                        </h2>
+                    </header>
 
-                    {Object.keys(projectsDataLocale.descriptions).map((description, index) => (
-                        <React.Fragment key={index}>
-                            {projectsDataLocale.descriptions[description].title && 
-                                <h3>{projectsDataLocale.descriptions[description].title}</h3>}
-                            {projectsDataLocale.descriptions[description].content && 
-                                projectsDataLocale.descriptions[description].content.split('\n').map((sentence, idx) => (
-                                    <p key={idx}>
-                                        {sentence}<br/>
-                                    </p>
-                                ))}
-                        </React.Fragment>
-                    ))}
+                    <section id="descriptions" className='projectsDetailPage__description-container'>
+                        {Object.keys(projectsDataLocale.descriptions).map((description, index) => (
+                            <div key={index} className='projectsDetailPage__description'>
+                                {projectsDataLocale.descriptions[description].title && 
+                                    <h3>{projectsDataLocale.descriptions[description].title}</h3>}
+                                {projectsDataLocale.descriptions[description].content && 
+                                    projectsDataLocale.descriptions[description].content.split('\n').map((sentence, idx) => (
+                                        <p key={idx}>
+                                            {sentence}<br/>
+                                        </p>
+                                    ))}
+                            </div>
+                        ))}
+                    </section>
 
-
-                    {/* {projectsDataLocale.descriptions.split('\n').map((sentence, index) => {
-                        return <p key={index}>{sentence}</p>
-                    })}
-
-                    {projectsDataLocale.descriptionsTitle1?
-                        <h3>{projectsDataLocale.descriptionsTitle1}</h3>
-                    : null}
-
-                    {projectsDataLocale.descriptions1?
-                        projectsDataLocale.descriptions1.split('\n').map((sentence, index) => {
-                            return <p key={index}>{sentence}</p>
-                        })
-                    : null} */}
-
-                    <section className="skills">
+                    <section id="skills">
                         <h3>
                             {projectsDataLocale.skillsTitle}
                         </h3>
@@ -86,17 +83,17 @@ const ProjectsDetailPresentation = ({
                         </ul>
                     </section>
 
-                    <section className="stack">
+                    <section id="stack" className='projectsDetailPage__description-container'>
                         <h3>
                             {projectsDataLocale.stackTitle}
                         </h3>
-                        <div className="stack-container">
+                        <div className="projectsDetailPage__stack">
                             {(projectDataGeneric.tags.split(',')).map((stack, index) => (
                                     handleTagsLink(stack, index)
                             ))}
                         </div>
                     </section>
-                    <section className="improvement">
+                    <section id="improvement">
                         <h3>
                             {projectsDataLocale.improvementTitle}
                         </h3>
@@ -109,16 +106,18 @@ const ProjectsDetailPresentation = ({
                         </ul>
                     </section>
                 </div>
-                <div className="img-column">
-                    <button onClick={() =>navigate(-1)} className='flat-button mr0 back-right'>
+
+                <div className="projectsDetailPage__image">
+                    <button onClick={handleNavigation} className='flat-button mr0 back-right'>
                         <FontAwesomeIcon icon={faArrowLeft} />
                         <span> {projectsDataLocale.backBtn}</span>
                     </button>
                     {Object.keys(projectDataGeneric.pictures).map((picture, index) => (
-                        <figure className="img-wraper" key={index}>
+                        <figure key={index}>
                             <img 
                                 src={process.env.PUBLIC_URL + projectDataGeneric.pictures[picture].url} 
                                 alt={projectsDataLocale.pictures[picture].alt}
+                                className='framed-picture'
                             />
                             <figcaption>
                                 Figure {index+1} : {projectsDataLocale.pictures[picture].alt}

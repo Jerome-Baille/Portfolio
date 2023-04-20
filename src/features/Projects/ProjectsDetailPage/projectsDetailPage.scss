@@ -1,0 +1,131 @@
+// Import the _mixins.scss file
+@import '../../../Sass/utils/mixins';
+@import '../../../Sass/utils/variables';
+
+.projectsDetailPage {
+    &__section {
+        padding-top: $paddingTopSection;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text {
+        @include flexColCenter;
+        align-items: unset;
+        row-gap: 1.5rem;
+    }
+
+    &__description-container {
+        @include flexColCenter;
+        align-items: unset;
+        row-gap: 1rem;
+    }
+
+    &__description {
+        @include flexColCenter;
+        align-items: unset;
+    }
+
+    &__image {
+        @include flexColCenter;
+        justify-content: flex-start;
+        row-gap: 2rem;
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            margin-top: 3rem;
+            width: 100%;
+        
+            a {
+                font-size: 3.125rem;
+                position: relative;
+        
+                &::after {
+                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+        
+                &:hover {
+                    color: $secondaryColor;
+        
+                    svg {
+                        opacity: 0;
+                    }
+        
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+        
+                &.github-link,
+                &.demo-link {
+                    &:before {
+                        font-family: 'La Belle Aurore', cursive;
+                        color: $primaryColor;
+                        font-size: 15px;
+                        position: absolute;
+                        left: -5px;
+                        top: -15px;
+                        opacity: 0.6;
+                        line-height: 18px;
+                      }
+                }
+
+                &.github-link {
+                    color: #171515;
+        
+                    &:before {
+                        content: 'Check out my code';
+                      }
+        
+                    &:after {
+                        content: 'GitHub';
+                    }
+                }
+                &.demo-link {
+                    color: #0078D7;
+        
+                    &:before {
+                        content: 'Or see it in action';
+                      }
+                    
+                    &:after {
+                        content: 'Demo';
+                    }
+                }
+            }
+        }
+    }
+
+    &__stack {
+        align-items: end;
+
+        @media screen and (min-width: 768px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          grid-auto-rows: minmax(100px, auto);
+        }
+
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+          display: grid;
+          grid-auto-columns: 33%;
+          grid-auto-flow: column;
+          overflow-x: scroll;
+        }
+    }
+}

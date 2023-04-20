@@ -1,0 +1,70 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+@import '../../Sass/utils/variables';
+
+.about {
+    &__section {
+        padding-top: $paddingTopSection;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text {
+        @include flexColCenter;
+        justify-content: flex-start;
+        row-gap: 1rem;
+
+        @media screen and (max-width: 768px) {
+            order: 2;
+        }
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+    &__signature {
+        width: 150px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__image {
+        @include flexColCenter;
+        justify-content: flex-start;
+        row-gap: 2rem;
+
+        @media screen and (max-width: 768px) {
+            order: 1;
+        }
+    }
+
+    &__stack {
+        align-items: end;
+        display: grid;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+            grid-auto-columns: 33%;
+            grid-auto-flow: column;
+            overflow-x: scroll;
+        }
+    }
+}

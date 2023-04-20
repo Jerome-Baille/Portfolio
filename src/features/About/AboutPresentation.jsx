@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import StackIconsDisplay from '../../components/stackIconsDisplay/StackIconsDisplay';
+import './about.scss';
 
 const AboutPresentation = ({ 
     descriptionButtonType, 
-    aboutData: { greetings, [`${descriptionButtonType}Description`]: description }, 
+    aboutData: { greetings, signature, profilePicture, descriptions : { [descriptionButtonType]: { content: description } } }, 
     technologyList, 
-    descriptionLengthButtons, 
-    profilePicture, 
-    signature 
+    descriptionLengthButtons
 }) => {
     const componentRef = useRef(null);
 
@@ -25,8 +25,8 @@ const AboutPresentation = ({
 
     return (
         <div className="container"  ref={componentRef}>
-            <section className="about inside-container">
-                <div className="text-column">
+            <section className="about__section inside-container">
+                <div className="about__text">
                     <h1>
                         {greetings}
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64">
@@ -43,26 +43,24 @@ const AboutPresentation = ({
                             </g>
                         </svg>
                     </h1>
-                    {descriptionLengthButtons}
+                    <div className='about__buttons'>
+                        {descriptionLengthButtons}
+                    </div>
                     <div id="description">
                         <p>
                             {description}
                         </p>
                     </div>
-                    <div className='signature-container'>
-                        <img src={process.env.PUBLIC_URL + signature} alt="Handwriten signature of Jerome."/>
+                    <div className='about__signature'>
+                        <img src={process.env.PUBLIC_URL + signature.src} alt={signature.alt}/>
                     </div>
                 </div>
-                <div className='img-column'>
-                    <div className="img-wrapper">
-                        <img src={process.env.PUBLIC_URL + profilePicture} className="your-pic" alt="Jerome looking to his left in black and white." />
-                    </div>
-                    <section className='stack-container'>
+                <div className='about__image'>
+                    <img src={process.env.PUBLIC_URL + profilePicture.src} className="framed-picture" alt={profilePicture.alt} />
+
+                    <section className='about__stack'>
                         {Object.values(technologyList).map((item) => (
-                        <div key={item.id} className='stack-single'>
-                            <img src={process.env.PUBLIC_URL + item.url} alt={item.name} />
-                            <p>{item.name}</p>
-                        </div>
+                            <StackIconsDisplay key={item.id} item={item} />
                         ))}
                     </section>
                 </div>

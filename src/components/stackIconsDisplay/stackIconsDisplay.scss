@@ -1,0 +1,22 @@
+// Import the _variables.scss file
+@import '../../Sass/utils/variables';
+@import '../../Sass/utils/mixins';
+
+.stack {
+    &__element {
+        @include flexColCenter;
+        overflow: hidden;
+    
+        img {
+          width: 50px;
+          z-index: 20;
+        }
+    
+        span {
+          font-size: 1.5em;
+          color: $primaryColor;
+          font-family: 'Coolvetica';
+          z-index: 50;
+        }
+    }
+}

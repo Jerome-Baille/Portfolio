@@ -9,6 +9,8 @@ import Stack from '@mui/joy/Stack';
 
 import { Link } from 'react-scroll';
 
+import './navbar.scss';
+
 const MobileNavbar = ({
   dataNavbar,
   handleClick

@@ -1,5 +1,5 @@
 // utils
-@import './Sass/utils/colors';
+@import './Sass/utils/variables';
 @import './Sass/utils/animations';
 @import 'animate.css';
 @import './Sass/utils/effects';
@@ -11,21 +11,7 @@
 
 // Components
 @import '~loaders.css/src/animations/pacman.scss';
-@import './Sass/component/loader';
 @import './Sass/component/buttons';
-@import './Sass/component/forms';
-@import './Sass/component/cards';
-@import './Sass/component/accordions';
 
 // layout
 @import './Sass/layout/containers';
-@import './Sass/layout/navbar';
-
-// Pages
-@import './Sass/pages/about';
-@import './Sass/pages/contact';
-@import './Sass/pages/singleProject';
-@import './Sass/pages/home';
-@import './Sass/pages/projects';
-@import './Sass/pages/cssChallenge';
-@import './Sass/pages/blog';

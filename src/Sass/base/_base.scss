@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Coolvetica';
 
     &:hover {
       cursor: pointer;
@@ -26,10 +27,6 @@ p {
     max-width: fit-content;
     text-align: justify;
     white-space: pre-wrap;
-
-    &:last-of-type{
-      margin-bottom: 3rem;
-    }
 }
 
 h1 {
@@ -138,7 +135,8 @@ h3 {
 
 input,
 textarea {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  color: $primaryColor !important;
 }
 
 figure {
@@ -158,4 +156,26 @@ figure {
 .accent-color {
     color: $primaryColor;
     font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.framed-picture {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  font-family: "Coolvetica";
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: $secondaryColor;
+  padding-left: 1.5rem;
+  text-align: justify;
 }

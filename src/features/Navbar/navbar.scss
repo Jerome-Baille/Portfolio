@@ -1,8 +1,12 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+@import '../../Sass/utils/variables';
+
+
 .navbar {
   background: $primaryColor;
   width: 60px;
   height: 100%;
-  // position: absolute;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -13,64 +17,56 @@
   align-items: center;
   padding-bottom: 20px;
 
-    &--mobile {
-      padding: 25px 15px;
-      background-color: $primaryColor;
-      color: white;
-      height: 100vh;
-      width: 180px;
+  &__logo {
+    padding: 10px 5px;
+  }
 
-      &__icon {
-        position : fixed !important;
-        top: 25px;
-        left: 25px;
-        color: $primaryColor !important;
-        z-index: 5;
+  &__group {
+    @include flexColCenter;
+
+    &__link{
+      font-size: 28px;
+      color: $backgroundColor;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+  
+      &:hover {
+        color: $secondaryColor;
       }
 
-      &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        row-gap: 20px;
-
-        & a:hover, & a.active {
+      &.active {
+        svg {
           color: $secondaryColor;
         }
       }
     }
+  }
 
-  .logo {
-    img {
-      width: 100%;
-      height: auto;
-      padding: 10px 5px;
+  &--mobile {
+    padding: 25px 15px;
+    background-color: $primaryColor;
+    color: white;
+    height: 100vh;
+    width: 180px;
+
+    &__icon {
+      position : fixed !important;
+      top: 25px;
+      left: 25px;
+      color: $primaryColor !important;
+      z-index: 5;
     }
-  }
 
-  &__group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 20px;
 
-  a {
-    font-size: 28px;
-    color: $backgroundColor;
-    display: block;
-    line-height: 51px;
-    height: 51px;
-    position: relative;
-    text-decoration: none;
-
-    &:hover {
-      color: $secondaryColor;
-    }
-  }
-
-  a.active {
-    svg {
-      color: $secondaryColor;
+      & a:hover, & a.active {
+        color: $secondaryColor;
+      }
     }
   }
 }

@@ -1,21 +1,9 @@
 .animate {
-    & .card-container {
+    & .certifications__cards,
+    & .projects__cards,
+    & .stack__element img,
+    & .contact__section__form-animation  {
       animation: slideUp 1.5s ease-in-out;
-    }
-    & .card-projects {
-      animation: slideUp 1.5s ease-in-out;
-    }
-  
-    & .stack-single {
-      img {
-        animation: slideUp 1.5s ease-in-out;
-      }
-    }
-
-    & .contact-page {
-        &__form-animation {
-            animation: slideUp 1.5s ease-in-out;
-        }
     }
   }
 

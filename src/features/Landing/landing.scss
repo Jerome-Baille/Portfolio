@@ -1,0 +1,33 @@
+// Import the _mixins.scss file
+@import '../../Sass/utils/mixins';
+
+.landing {
+    &__section {
+        @include flexColCenter;
+        scroll-snap-align: start;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    &__text {
+        height: calc( 100vh - 100px);
+        width: 100%;
+        @include flexColCenter;
+        row-gap: 5rem;
+    
+        @media screen and (max-width: 768px) {
+            padding: 0 2rem;
+        }
+    
+        & header {
+            width: 100%;
+            @include flexColCenter;
+        }
+    }
+    
+    &__buttons {
+        @include flexColCenter;
+        row-gap: 1rem;
+    }
+}

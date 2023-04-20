@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import ContactFormContainer from './ContactForm/ContactFormContainer';
 
+import './contact.scss';
+
 const ContactPresentation = ({ 
     contactData: { title, subtitle, form },
     onSubmit
@@ -22,17 +24,18 @@ const ContactPresentation = ({
 
     return (
         <div className="container" ref={componentRef}>
-            <section className="contact-page inside-container">
-                <header>
+            <section className="contact__section inside-container">
+                <header className='contact__header'>
                     <h1>
                         {title}
                     </h1>
+                    <p>
+                        {subtitle}
+                    </p>
                 </header>
-                <p>
-                    {subtitle}
-                </p>
+
                 <section
-                    className='contact-page__form-animation'
+                    className='contact__section__form-animation'
                 >
                     <ContactFormContainer 
                         formData={form} 

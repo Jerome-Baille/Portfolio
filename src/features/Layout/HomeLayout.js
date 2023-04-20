@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { animateScroll, Element } from 'react-scroll';
 
 import About from '../About/AboutContainer';
-import Certifications from '../Blog/CertificationsContainer';
+import Certifications from '../Certifications/CertificationsContainer';
 import Contact from '../Contact/ContactContainer';
 import Landing from '../Landing/LandingContainer';
 import Projects from '../Projects/ProjectsContainer';
@@ -14,25 +14,23 @@ const HomePresentation = () => {
     })
 
   return (
-    <div className="container home-page">
-        <div className="inside-container">
-            <Element id="home" className='section'>
+    <>
+            <Element id="home">
                 <Landing />
             </Element>
-            <Element id="about" className='section'>
+            <Element id="about">
                 <About />
             </Element>
-            <Element id="projects" className='section'>
+            <Element id="projects">
                 <Projects />
             </Element>
-            <Element id="certifications" className='section'>
+            <Element id="certifications">
                 <Certifications />
             </Element>
-            <Element id="contact" className='section'>
+            <Element id="contact">
                 <Contact />
             </Element>
-        </div>
-    </div> 
+    </>
   )
 }
 

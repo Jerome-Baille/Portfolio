@@ -7,6 +7,8 @@ import Select from '@mui/material/Select';
 
 import CustomCard from '../../components/CustomCard';
 
+import './certifications.scss';
+
 const CertificationsPresentation = ({ 
     certificationsDataGeneric, 
     certificationsDataLocale,
@@ -35,8 +37,8 @@ const CertificationsPresentation = ({
     }, []);
 
     return (
-        <div className='container projects-page' ref={componentRef}>
-            <section className='project-section inside-container'>
+        <div className='container' ref={componentRef}>
+            <section className='certifications__section inside-container'>
                 <h1>
                     {certificationsDataLocale.title}
                 </h1>
@@ -47,7 +49,6 @@ const CertificationsPresentation = ({
                 <FormControl 
                     sx={{ 
                         minWidth: 250,
-                        marginBottom: 5,
                     }}
                 >
                     <InputLabel id="select-certifications-label">
@@ -71,7 +72,7 @@ const CertificationsPresentation = ({
                     </Select>
                 </FormControl>
 
-                <div className="card-container">
+                <div className="certifications__cards">
                     {Object.keys(certificationsDataGeneric).map((certification, index) => (
                         <CustomCard 
                             key={index}
