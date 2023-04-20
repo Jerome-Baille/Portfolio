@@ -329,6 +329,18 @@
         "title": "Contact Me",
         "subtitle": "If you want to know more about me or my projects, feel free to use the form below. I will answer you as soon as possible.",
         "form" : {
+            "toast":{
+                "success": {
+                    "type": "success",
+                    "title": "Success",
+                    "message": "Your message has been sent successfully."
+                },
+                "error": {
+                    "type": "error",
+                    "title": "Error",
+                    "message": "An error has occurred while sending your message. Please try again later."
+                }
+            },
             "inputs": {
                 "name": {
                     "type": "text",

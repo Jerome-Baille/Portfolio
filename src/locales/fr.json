@@ -329,6 +329,18 @@
         "title" : "Contactez Moi",
         "subtitle": "Si vous voulez en savoir plus sur moi ou mes projets, n'hésitez pas à utiliser le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.",
         "form" : {
+            "toast":{
+                "success": {
+                    "type": "success",
+                    "title": "Success",
+                    "message": "Votre message a été envoyé avec succès."
+                },
+                "error": {
+                    "type": "error",
+                    "title": "Erreur",
+                    "message": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+                }
+            },
           "inputs" : { 
             "name": {
                 "type": "text",

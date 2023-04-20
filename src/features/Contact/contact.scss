@@ -6,7 +6,13 @@
     &__section {
         padding-top: $paddingTopSection;
         @include flexColCenter;
+        justify-content: flex-start;
         row-gap: 1.5rem;
+
+        textarea:not(:empty)[aria-invalid="false"] ~ .MuiOutlinedInput-notchedOutline {
+            border-color: green !important;
+            border-width: 2px;
+          }
     }
 
     &__header {
