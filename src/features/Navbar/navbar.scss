@@ -46,7 +46,6 @@
   &--mobile {
     padding: 25px 15px;
     background-color: $primaryColor;
-    color: white;
     height: 100vh;
     width: 180px;
 
@@ -63,10 +62,15 @@
       flex-direction: column;
       justify-content: space-between;
       row-gap: 20px;
+    }
 
-      & a:hover, & a.active {
-        color: $secondaryColor;
-      }
+    &__link {
+      color: $backgroundColor;
+    }
+
+    &__link:hover, 
+    &__link.active {
+      color: $secondaryColor;
     }
   }
 }

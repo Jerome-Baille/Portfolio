@@ -60,6 +60,7 @@ const MobileNavbar = ({
                   to={key}
                   spy={true}
                   onClick={handleScroll(key)}
+                  className='navbar--mobile__link'
                 >
                   <ListItemText
                     primary={link.label}
@@ -80,6 +81,7 @@ const MobileNavbar = ({
                   href={link.link}
                   target="_blank"
                   rel="noreferrer"
+                  className='navbar--mobile__link'
                 >
                   <ListItemText
                     primary={link.label}
