@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../Sidebar';
+import Navbar from '../Navbar/NavbarContainer';
 import Particle from '../../components/Particle';
 
 // create a context for the languages
@@ -18,7 +18,7 @@ const Layout = () => {
         <div className="app">
             <Particle className="particles" />
             <LanguageContext.Provider value={{ language, setLanguage }}>
-                <Sidebar />
+                <Navbar />
                 <div className="page">
                     <Outlet />
                 </div>

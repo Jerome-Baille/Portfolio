@@ -8,6 +8,12 @@
     animation: fadeIn 1s 1.8s backwards;
 }
 
+@media screen and (max-width: 768px) {
+    .Typewriter__wrapper {
+        font-size: 1.25rem;
+    }
+}
+
 .particles {
     position: fixed;
     z-index: -1;

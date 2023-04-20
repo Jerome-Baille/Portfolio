@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import { TextField } from '@mui/material';
 
 const CustomForm = ({ formData, onSubmit }) => {
-
     const initialValues = {};
     const validationSchemaFields = {};
 
@@ -16,7 +15,7 @@ const CustomForm = ({ formData, onSubmit }) => {
 
         if (input.type === 'email') {
         validationSchema = validationSchema.email(input.invalid);
-        }
+        } 
 
         validationSchemaFields[key] = validationSchema;
     });
@@ -33,15 +32,24 @@ const CustomForm = ({ formData, onSubmit }) => {
             validationSchema={Yup.object().shape(validationSchemaFields)}
         >
         {({ isSubmitting, isValid, dirty }) => (
-            <Form
-                className='contact-page__form-animation'
-            >
+            <Form>
                 {Object.keys(formData.inputs).map((key, index) => {
                     const input = formData.inputs[key];
                     return (
                         <Field key={key} name={key}>
                             {({ field, meta }) => (
                                 <TextField
+                                    sx={{ 
+                                        '& .MuiOutlinedInput-root': {
+                                            '& fieldset': {
+                                              borderColor: '#335384',
+                                            },
+                                            '& input:valid + fieldset': {
+                                              borderColor: 'green',
+                                              borderWidth: 2,
+                                            }
+                                          },
+                                    }}
                                     id={key}
                                     label={input.label}
                                     type={input.type}

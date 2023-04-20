@@ -9,6 +9,51 @@
         "btnContact": "Discutons",
         "btnAbout": "En Savoir Plus"
     },
+    "navbar": {
+        "logo": "/images/JB-logo2.png",
+        "alt": "Les initiales J et B en blanc sur fond bleu foncé.",
+        "intern": {
+            "home": {
+                "label": "Accueil",
+                "link": "/",
+                "aria": "Vers la page d'accueil"
+            },
+            "about": {
+                "label": "À propos",
+                "link": "/about",
+                "aria": "Vers la page À propos"
+            },
+            "projects": {
+                "label": "Projets",
+                "link": "/projects",
+                "aria": "Vers la page Projets"
+            },
+            "certifications": {
+                "label": "Certificats",
+                "link": "/certifications",
+                "aria": "Vers la page Certificats"
+            },
+            "contact": {
+                "label": "Contact",
+                "link": "/contact",
+                "aria": "Vers la page Contact"
+            }
+        },
+        "extern": {
+            "cv": {
+                "label": "CV",
+                "link": "/pdf/Jerome BAILLE - Frontend Developer.pdf"
+            },
+            "linkedIn": {
+                "label": "Profil LinkedIn",
+                "link": "https://www.linkedin.com/in/jerome-baille/"
+            },
+            "github": {
+                "label": "Profil GitHub",
+                "link": "https://github.com/Jerome-Baille"
+            }
+        }
+    },
     "about" : {
     "greetings" : "Bonjour",
     "shortBtn" : "court",
@@ -25,6 +70,15 @@
         "stackTitle": "Stack utilisée",
         "improvementTitle": "Possibles améliorations",
         "backBtn": "Retour",
+        "filters": {
+            "label": "Filtrer par technologie",
+            "type": {
+                "all": "Toutes",
+                "angular": "Angular",
+                "react": "React",
+                "nodejs": "NodeJs"
+            }
+        },
         "JobVisualiser": {
             "title": "Job Visualiser",
             "subtitle": "La recherche d'emploi en toute simplicité.",
@@ -78,7 +132,11 @@
                     "alt": "Site internet de Phocea Travel sur mobile"
                 }
             },
-            "descriptions" : "Phocéa Travel est une petite entreprise offrant un outil de planification de vacances ! \nSon site web permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. \nLes hébergements peuvent également être filtrés par thème, comme le budget ou l'ambiance.",
+            "descriptions" : {
+                "1": {
+                    "content": "Phocéa Travel est une petite entreprise offrant un outil de planification de vacances ! \nSon site web permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. \nLes hébergements peuvent également être filtrés par thème, comme le budget ou l'ambiance."
+                }
+            },
             "skills": [
                 "Intégrer du contenu selon un template.", 
                 "Implémenter une interface responsive."
@@ -101,7 +159,11 @@
                     "alt": "Site internet d'OhMyFood, deuxième maquette."
                 }
             },
-            "descriptions" : "Ohmyfood! est une jeune startup qui souhaite s'imposer sur le marché des restaurants. \nL'objectif est de développer un site web 100% mobile qui répertorie les menus de restaurants gastronomiques. \nEn plus des systèmes de réservation classiques, les clients pourront composer le menu de leur repas afin que les plats soient prêts à leur arrivée. \nPlus d'attente dans les restaurants !",
+            "descriptions" : {
+                "1": {
+                    "content": "Ohmyfood! est une jeune startup qui souhaite s'imposer sur le marché des restaurants. \nL'objectif est de développer un site web 100% mobile qui répertorie les menus de restaurants gastronomiques. \nEn plus des systèmes de réservation classiques, les clients pourront composer le menu de leur repas afin que les plats soient prêts à leur arrivée. \nPlus d'attente dans les restaurants !"
+                }
+            },
             "skills": [
                 "Implémenter des effets graphiques CSS avancés",
                 "Assurer la cohérence graphique d'un site web",
@@ -126,7 +188,11 @@
                     "alt": "Site internet de La Chouette Agence, second mockup."
                 }
             },
-            "descriptions": "La chouette agence est une grande agence de web design basée à Lyon, France. \nEn raison de problèmes de référencement, le site web n'était que sur la deuxième page des moteurs de recherche. \nUne optimisation SEO a donc été effectuée et une amélioration du code du site web afin de corriger les erreurs d'affichage et d'améliorer l'accessibilité du site web.",
+            "descriptions": {       
+                "1": {
+                    "content": "La chouette agence est une grande agence de web design basée à Lyon, France. \nEn raison de problèmes de référencement, le site web n'était que sur la deuxième page des moteurs de recherche. \nUne optimisation SEO a donc été effectuée et une amélioration du code du site web afin de corriger les erreurs d'affichage et d'améliorer l'accessibilité du site web."
+                }
+            },
             "skills": [
                 "Optimiser la taille et la vitesse d'un site web",
                 "Assurer l'accessibilité d'un site web",
@@ -149,7 +215,11 @@
                     "alt": "Site internet de Kanap, deuxième maquette."
                 }
             },
-            "descriptions" : "Kanap est une marque de canapé qui vend ses produits exclusivement depuis son magasin. \nAujourd'hui, l'entreprise souhaitait avoir une plateforme e-commerce en plus de son magasin physique pour vendre ses produits sur Internet.",
+            "descriptions" : {
+                "1": {
+                    "content": "Kanap est une marque de canapé qui vend ses produits exclusivement depuis son magasin. \nAujourd'hui, l'entreprise souhaitait avoir une plateforme e-commerce en plus de son magasin physique pour vendre ses produits sur Internet."
+                }
+            },
             "skills": [
                 "Valider des données provenant de sources externes",
                 "Gérer les événements JavaScript",
@@ -172,7 +242,11 @@
                     "alt": "Site internet de Piiquante, deuxième maquette."
                 }
             },
-            "descriptions" : "Piiquante est une entreprise de sauce piquante qui souhaite développer une application web de critique de sauce piquante appelée 'Hot Takes' \nAlors que la responsable produit de Piiquante espère à terme transformer l'application de critique en boutique en ligne, elle souhaite que la première version soit une 'galerie de sauces' qui permet aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que partagent les autres.",
+            "descriptions" : {
+                "1": {
+                    "content": "Piiquante est une entreprise de sauce piquante qui souhaite développer une application web de critique de sauce piquante appelée 'Hot Takes' \nAlors que la responsable produit de Piiquante espère à terme transformer l'application de critique en boutique en ligne, elle souhaite que la première version soit une 'galerie de sauces' qui permet aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que partagent les autres."
+                }
+            },
             "skills": [
                 "Mettre en œuvre un modèle de données logique conformément aux réglementations",
                 "Mettre en œuvre des opérations CRUD de manière sécurisée",
@@ -194,7 +268,11 @@
                     "alt": "Site internet de Groupomania, deuxième maquette."
                 }
             },
-            "descriptions" : "Groupomania is a group specialized in mass distribution. \nThe project consists in building an internal social network for the employees of Groupomania. \nThe goal of this tool is to facilitate interactions between colleagues.",
+            "descriptions" : {
+                "1": {
+                    "content": "Groupomania est un groupe spécialisé dans la distribution de masse. \nLe projet consiste à construire un réseau social interne pour les employés de Groupomania. \nL'objectif de cet outil est de faciliter les interactions entre collègues."
+                }
+            },
             "skills": [
                 "Authentifier un utilisateur et maintenir sa session",
                 "Gérer un stockage de données à l'aide de SQL",

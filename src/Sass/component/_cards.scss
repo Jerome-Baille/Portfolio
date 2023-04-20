@@ -61,6 +61,11 @@
     width: 100%;
     height: 100%;
     inset: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
 }
 
 .card-footer {
@@ -300,5 +305,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1rem;
-  animation: slideUp 3s ease-in-out;
 }
+
+.card-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+

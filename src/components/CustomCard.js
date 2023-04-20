@@ -46,7 +46,15 @@ const CustomCard = ({
     return (
         <>
             <Card
-                sx={{ border: '5px solid', borderColor: borderColor(dataCardGeneric.status) }}
+                sx={{ 
+                    border: '5px solid', 
+                    borderColor: borderColor(dataCardGeneric.status),
+                    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.16)',
+                    transition: 'box-shadow 0.2s ease-in-out',
+                    '&:hover': {
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.24)'
+                    }
+                }}
             >
                 <CardHeader
                     sx={{ height: '95px' }}

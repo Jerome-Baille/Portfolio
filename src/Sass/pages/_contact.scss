@@ -18,8 +18,9 @@
       float: right;
       margin-right: 10px;
     }
+}
 
-    &__form-animation {
-      animation: slideUp 3s ease-in-out;
-    }
+textarea:not(:empty)[aria-invalid="false"] ~ .MuiOutlinedInput-notchedOutline {
+  border-color: green !important;
+  border-width: 2px;
 }

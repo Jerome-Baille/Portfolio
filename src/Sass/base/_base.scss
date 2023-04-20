@@ -4,11 +4,16 @@
 
 html {
   font-size: 16px;
+
 }
-  
+
 a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      cursor: pointer;
+    }
 }
 
 p {
@@ -141,7 +146,7 @@ figure {
   padding: 0;
 
   figcaption {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: $secondaryColor;
     display: flex;
     justify-content: center;
@@ -153,9 +158,4 @@ figure {
 .accent-color {
     color: $primaryColor;
     font-weight: bold;
-}
-
-.animation-container {
-  width: 100%;
-  overflow: hidden;
 }

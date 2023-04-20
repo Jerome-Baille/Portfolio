@@ -24,10 +24,15 @@ const ProjectsDetailPresentation = ({
         } 
       }      
 
+      const handleNavigation = () => {
+        navigate(-1)
+      }
+
+
     return (
         <div className="container">
             <section className="single-project inside-container">
-                <button onClick={() =>navigate(-1)} className='flat-button mr0 back-left'>
+                <button onClick={handleNavigation} className='flat-button mr0 back-left'>
                     <FontAwesomeIcon icon={faArrowLeft} />
                     <span> {projectsDataLocale.backBtn}</span>
                 </button>

@@ -5,7 +5,7 @@ import en from '../../locales/en.json'
 import fr from '../../locales/fr.json'
 
 import ContactPresentation from './ContactPresentation'
-import { LanguageContext } from '../Layout';
+import { LanguageContext } from '../Layout/MainLayout';
 
 const ContactContainer = () => {
   const [contactData, setContactData] = useState({});

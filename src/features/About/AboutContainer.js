@@ -5,7 +5,7 @@ import AboutPresentation from './AboutPresentation'
 import en from '../../locales/en.json'
 import fr from '../../locales/fr.json'
 
-import { LanguageContext } from '../Layout';
+import { LanguageContext } from '../Layout/MainLayout';
 
 const AboutContainer = () => {
   const profilePicture = '/images/about/DSC_0703_2.JPG'

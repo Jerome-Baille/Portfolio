@@ -4,7 +4,7 @@ import CertificationsPresentation from './CertificationsPresentation';
 import certificationsList from '../../assets/certificationsList.json';
 import en from '../../locales/en.json';
 import fr from '../../locales/fr.json';
-import { LanguageContext } from '../Layout';
+import { LanguageContext } from '../Layout/MainLayout';
 
 const CertificationsContainer = () => {
     const { language } = useContext(LanguageContext);
@@ -17,7 +17,6 @@ const CertificationsContainer = () => {
     }, [language, certificationsDataLocale]);
 
     const handleSelectedOption = (option) => {
-        console.log(option)
         if (option.toLowerCase() === "all") {
             setCertificationsDataGeneric(certificationsList);
         } else {

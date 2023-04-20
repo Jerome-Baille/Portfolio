@@ -5,7 +5,7 @@ import ProjectsDetailPresentation from './ProjectsDetailPresentation';
 import projectList from '../../../assets/projectList.json';
 import en from '../../../locales/en.json';
 import fr from '../../../locales/fr.json';
-import { LanguageContext } from '../../Layout';
+import { LanguageContext } from '../../Layout/MainLayout';
 
 const ProjectsDetailContainer = () => {
     const { language } = useContext(LanguageContext);

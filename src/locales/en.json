@@ -9,6 +9,51 @@
         "btnContact": "Let's Talk",
         "btnAbout": "Know More About Me"
     },
+    "navbar": {
+        "logo" : "/images/JB-logo2.png",
+        "alt": "White J and B initials on a dark blue background.",
+        "intern": {
+            "home": {
+                "label": "Home",
+                "link": "/",
+                "aria": "Go to homepage"
+            },
+            "about": {
+                "label": "About",
+                "link": "/about",
+                "aria": "Go to about page"
+            },
+            "projects": {
+                "label": "Projects",
+                "link": "/projects",
+                "aria": "Go to projects page"
+            },
+            "certifications": {
+                "label": "Certifications",
+                "link": "/certifications",
+                "aria": "Go to certifications page"
+            },
+            "contact": {
+                "label": "Contact",
+                "link": "/contact",
+                "aria": "Go to contact page"
+            }
+        },
+        "extern": {
+            "cv": {
+                "label": "CV",
+                "link": "/pdf/Jerome BAILLE - Frontend Developer.pdf"
+            },
+            "linkedIn": {
+                "label": "LinkedIn Profile",
+                "link": "https://www.linkedin.com/in/jerome-baille/"
+            },
+            "github": {
+                "label": "GitHub Profile",
+                "link": "https://github.com/Jerome-Baille"
+            }
+        }
+    },
     "about" : {
         "greetings" : "Hello there",
         "shortBtn": "Short",
@@ -25,6 +70,15 @@
         "stackTitle": "Stack Used",
         "improvementTitle": "Possible areas of improvement",
         "backBtn": "Back",
+        "filters": {
+            "label": "Filter by technology",
+            "type": {
+                "all": "All",
+                "angular": "Angular",
+                "react": "React",
+                "nodejs": "NodeJs"
+            }
+        },
         "JobVisualiser": {
             "title": "Job Visualiser",
             "subtitle": "Job hunting made easy.",
@@ -78,7 +132,11 @@
                     "alt": "Phocea Travel website on mobile"
                 }
             },
-            "descriptions" : "Phocéa Travel is a small company offering a vacation planning tool! \nIts website allows users to find accommodations and activities in the city of their choice. \nAccommodations can also be filtered by theme, such as budget or ambiance.",
+            "descriptions" : {
+                "1": {
+                    "content": "Phocéa Travel is a small company offering a vacation planning tool! \nIts website allows users to find accommodations and activities in the city of their choice. \nAccommodations can also be filtered by theme, such as budget or ambiance."
+                }
+            },
             "skills": [
                 "Integrate content according to a template.",
                 "Implement a responsive interface."
@@ -101,7 +159,11 @@
                     "alt": "OhMyFood website, second mockup."
                 }
             },
-            "descriptions" : "Ohmyfood! is a young startup that would like to impose itself on the restaurant market. \nThe objective is to develop a 100% mobile website that lists the menus of gourmet restaurants. \nIn addition to the classic reservation systems, customers will be able to compose the menu of their meal so that the dishes are ready when they arrive. \nNo more waiting in restaurants!",
+            "descriptions" : {
+                "1" : {
+                    "content": "Ohmyfood! is a young startup that would like to impose itself on the restaurant market. \nThe objective is to develop a 100% mobile website that lists the menus of gourmet restaurants. \nIn addition to the classic reservation systems, customers will be able to compose the menu of their meal so that the dishes are ready when they arrive. \nNo more waiting in restaurants!"
+                }
+            },
             "skills": [
                 "Implementing advanced graphic CSS effects",
                 "Ensuring the graphic coherence of a website",
@@ -126,7 +188,11 @@
                     "alt": "La Chouette Agence website, second mockup."
                 }
             },
-            "descriptions" : "La chouette agence is a large web design agency based in Lyon, France. \nDue to SEO problems, the website was only on the second page of search engines. \nAn SEO optimization was therefore performed and an improvement of the website's code in order to correct the display errors and improve the website's accessibility.",
+            "descriptions" : {
+                "1" : {
+                    "content": "La chouette agence is a large web design agency based in Lyon, France. \nDue to SEO problems, the website was only on the second page of search engines. \nAn SEO optimization was therefore performed and an improvement of the website's code in order to correct the display errors and improve the website's accessibility."
+                }
+            },
             "skills": [
                 "Optimizing the size and speed of a website",
                 "Ensuring the accessibility of a website",
@@ -149,7 +215,11 @@
                     "alt": "Kanap website, second mockup."
                 }
             },
-            "descriptions" : "Kanap is a sofa brand that sells its products exclusively from its store. \nToday, the company wanted to have an e-commerce platform in addition to its physical store to sell its products on the Internet.",
+            "descriptions" : {
+                "1" : {
+                    "content": "Kanap is a sofa brand that sells its products exclusively from its store. \nToday, the company wanted to have an e-commerce platform in addition to its physical store to sell its products on the Internet."
+                }
+            },
             "skills": [
                 "Validating data from external sources",
                 "Managing JavaScript events",
@@ -172,7 +242,11 @@
                     "alt": "Piiquante website, second mockup."
                 }
             },
-            "descriptions" : "Piiquante is a hot sauce company that wants to develop a hot sauce review web application called 'Hot Takes'. \nWhile Piiquante's product manager hopes to eventually turn the review application into an online store, she wants the first version to be a 'sauce gallery' that allows users to upload their favorite hot sauces and to like or dislike the sauces that others share.",
+            "descriptions" : {
+                "1" : {
+                    "content": "Piiquante is a hot sauce company that wants to develop a hot sauce review web application called 'Hot Takes'. \nWhile Piiquante's product manager hopes to eventually turn the review application into an online store, she wants the first version to be a 'sauce gallery' that allows users to upload their favorite hot sauces and to like or dislike the sauces that others share."
+                }
+            },
             "skills": [
                 "Implement a logical data model in accordance with regulations",
                 "Implement CRUD operations in a secure manner",
@@ -194,7 +268,11 @@
                     "alt": "website, second mockup."
                 }
             },
-            "descriptions" : "Groupomania est un groupe spécialisé dans la distribution de masse. \nLe projet consiste à créer un réseau social interne pour les employés de Groupomania. \nL'objectif de cet outil est de faciliter les interactions entre collègues.",
+            "descriptions" : {
+                "1" : {
+                    "content": "Groupomania is a group specialized in mass distribution. \nThe project consists of creating an internal social network for Groupomania employees. \nThe objective of this tool is to facilitate interactions between colleagues."
+                }
+            },
             "skills": [
                 "Authenticating a user and maintaining their session",
                 "Managing a data store using SQL",

@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from 'react';
+
 const AboutPresentation = ({ 
     descriptionButtonType, 
     aboutData: { greetings, [`${descriptionButtonType}Description`]: description }, 
@@ -6,9 +8,23 @@ const AboutPresentation = ({
     profilePicture, 
     signature 
 }) => {
+    const componentRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    componentRef.current.classList.add('animate');
+                } 
+            });
+        });
+        observer.observe(componentRef.current);
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
-        <div className="container">
+        <div className="container"  ref={componentRef}>
             <section className="about inside-container">
                 <div className="text-column">
                     <h1>
