@@ -4,7 +4,7 @@
 
 .about {
     &__section {
-        padding-top: $paddingTopSection;
+        padding: $paddingSection 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 50px;

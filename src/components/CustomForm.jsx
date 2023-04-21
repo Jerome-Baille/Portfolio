@@ -2,6 +2,8 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { TextField } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const CustomForm = ({ formData, onSubmit }) => {
     const initialValues = {};
@@ -72,7 +74,7 @@ const CustomForm = ({ formData, onSubmit }) => {
                     type="submit"
                     disabled={isSubmitting || !isValid || !dirty } 
                 >
-                    {formData.btnContact}
+                    {formData.btnContact} <FontAwesomeIcon icon={faPaperPlane} />
                 </button>
             </Form>
         )}

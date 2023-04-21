@@ -39,6 +39,7 @@ h1 {
     margin-bottom: 40px;
     width: fit-content;
     text-align: start;
+    white-space: pre-wrap;
 
     &:before {
         content: '<h1>';

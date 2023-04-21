@@ -4,7 +4,7 @@
 
 .contact {
     &__section {
-        padding-top: $paddingTopSection;
+        padding: $paddingSection 0;
         @include flexColCenter;
         justify-content: flex-start;
         row-gap: 1.5rem;

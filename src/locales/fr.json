@@ -1,12 +1,8 @@
 {
     "home": {
-        "greeting": "Bonjour,",
-        "name": "Je suis Jérôme,",
-        "job": "Développeur Web.",
-        "type1": "Front-End | Back-End",
-        "type2": "A l'écoute d'opportunités",
-        "type3": "Télétravail à 100%",
-        "btnContact": "Discutons",
+        "greeting": "Bonjour, \nJe suis Jérôme, \nIngénieur Frontend.",
+        "btnContact": "Envoyez moi un message",
+        "btnMeeting": "Plannifiez une rencontre",
         "btnAbout": "En Savoir Plus"
     },
     "navbar": {

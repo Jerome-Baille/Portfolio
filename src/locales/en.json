@@ -1,12 +1,8 @@
 {
     "home": {
-        "greeting": "Hello,",
-        "name": "I'm Jérôme,",
-        "job": "Web Developer.",
-        "type1": "Front-End | Back-End",
-        "type2": "Open for work",
-        "type3": "Full remote only",
-        "btnContact": "Let's Talk",
+        "greeting": "Hello, \nI'm Jérôme, \nFrontend Engineer.",
+        "btnContact": "Send me a message",
+        "btnMeeting": "Set up a meeting",
         "btnAbout": "Know More About Me"
     },
     "navbar": {

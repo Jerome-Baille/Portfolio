@@ -4,7 +4,7 @@
 
 .projects {
     &__section {
-        padding-top: $paddingTopSection;
+        padding: $paddingSection 0;
         @include flexColCenter;
         row-gap: 1.5rem;
     }
