@@ -1,11 +1,14 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import ReactGA from 'react-ga';
 import Loader from 'react-loaders'
 
 import Error from './features/Error/ErrorContainer';
 
 import './App.scss';
+
+// Initialize Google Analytics with tracking ID
+ReactGA.initialize('G-6GKSDNRMEH');
 
 const About = lazy(() => import('./features/About/AboutContainer'));
 const Certifications = lazy(() => import('./features/Certifications/CertificationsContainer'));
@@ -18,6 +21,9 @@ const Projects = lazy(() => import('./features/Projects/ProjectsContainer'));
 
 
 function App() {
+  // Track pageview on component mount
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  
   return (
     <Suspense fallback={<Loader type="pacman" />}>
       <Routes>
