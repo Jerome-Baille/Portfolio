@@ -139,6 +139,41 @@
                 "Add a favorite system to allow the user to save his favorite jobs."
             ]
         },
+        "PantryPal":{
+            "title": "Pantry Pal",
+            "subtitle": "Toutes vos recettes préférées au même endroit.",
+            "logo": {
+                "alt": "Un chat angora chef cuisinier entouré de différents ingrédients et montrant un smartphone."
+            },
+            "pictures": {
+                "mockup1": {
+                    "alt": "Liste de toutes les recettes de l'utilisateur affichées dans des cartes sur l'écran d'une tablette."
+                },
+                "mockup2": {
+                    "alt": "Vue détaillée d'une recette affichée sur l'écrant d'un smartphone."
+                },
+                "mockup3": {
+                    "alt": "Liste de courses générée par l'utilisateur et affichée sur un smartphone."
+                }
+            },
+            "descriptions" : {
+                "1": {
+                    "content": "Pantry Pal est une application PWA Angular qui permet aux utilisateurs de sauvegarder toutes leurs recettes préférées au même endroit. \nL'application permet également aux utilisateurs de rechercher des recettes en fonction des ingrédients qu'ils ont dans leur garde-manger. \nL'application est également disponible hors ligne."
+                }
+            },
+            "skills": [
+                "Créer une application Web progressive", 
+                "Créer un tableau de bord avec une barre de recherche et des filtres",
+                "Créer un CRUD pour ajouter, modifier ou supprimer les recettes",
+                "Implémenter un système de partage pour permettre aux utilisateurs de partager leurs recettes préférées",
+                "Implémenter un service worker pour permettre à l'application de fonctionner hors ligne",
+                "Implémenter une base de données pour stocker les recettes."
+            ],
+            "improvements": [
+                "Ajouter un système de notation pour permettre aux utilisateurs de noter les recettes.",
+                "Ajouter un système de commentaires pour permettre aux utilisateurs de commenter les recettes."
+            ] 
+        },
         "PhoceaTravel": {
             "title": "Phocea Travel",
             "subtitle": "Site web responsive pour une agence de voyage.",

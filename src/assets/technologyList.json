@@ -30,12 +30,12 @@
         "url": "/images/Stack/sass.svg"
     },
     "NodeJs" : {
-        "id": "Node-js",
+        "id": "NodeJs",
         "name": "Node.js",
         "url": "/images/Stack/nodejs.svg"
     },
     "Express" : {
-        "id": "Express-js",
+        "id": "Express",
         "name": "Express.js",
         "url": "/images/Stack/express.svg"
     },

@@ -32,6 +32,10 @@
         align-items: center;
         width: 100%;
 
+        & .flat-button {
+            white-space: wrap;
+        }
+
         @media screen and (max-width: 768px) {
             flex-direction: column;
             row-gap: 2rem;

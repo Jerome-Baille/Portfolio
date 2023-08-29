@@ -15,6 +15,24 @@
         },
         "tags": "React,  Sass,  NodeJs,  Express,  MongoDB, Chrome Extension"
     },
+    "PantryPal":{
+        "id": "PantryPal",
+        "logo": "/images/Projects/PantryPal/PantryPal-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/images/Projects/PantryPal/mockup-1.png"
+            },
+            "mockup2": {
+                "url": "/images/Projects/PantryPal/mockup-2.png"
+            },
+            "mockup3": {
+                "url": "/images/Projects/PantryPal/mockup-3.png"
+            }
+        },
+        "tags": "Angular, NodeJs, Express, MySQL",
+        "github": "https://github.com/Jerome-Baille/PantryPal",
+        "demo": "https://pantry-pal.jerome-baille.fr"
+    },
     "PhoceaTravel":{
         "id": "PhoceaTravel",
         "logo": "/images/Projects/PhoceaTravel/phocea-travel-logo.png",
@@ -86,7 +104,7 @@
                 "url": "/images/Projects/Piiquante/mokup2.png"
             }
         },
-        "tags": "API,  NodeJs,  Express,  MongoDB",
+        "tags": "API, NodeJs, Express, MongoDB",
         "github": "https://github.com/Jerome-Baille/JeromeBaille_6_24012022"
     },
     "Groupomania": {
@@ -100,7 +118,7 @@
                 "url": "/images/Projects/Groupomania/mokup2.png"
             }
         },
-        "tags": "Angular, Sass, NodeJs,  Express,  MySQL,  SocialNetwork",
+        "tags": "Angular, Sass, NodeJs, Express, MySQL, SocialNetwork",
         "github": "https://github.com/Jerome-Baille/JeromeBaille_7_23022022"
     }
 }
