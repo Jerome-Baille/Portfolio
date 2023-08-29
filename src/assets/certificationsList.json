@@ -11,6 +11,12 @@
         "url" : "https://www.coursera.org/professional-certificates/meta-front-end-developer",
         "img" : "/images/Blog/meta.svg"
     },
+    "GoogleCybersecurity":{
+        "status" : "completed",
+        "author" : "Google",
+        "url" : "https://www.coursera.org/professional-certificates/google-cybersecurity",
+        "img" : "/images/Blog/google.svg"
+    },
     "GoogleUXDesign": {
         "status" : "inProgress",
         "author" : "Google",
@@ -18,7 +24,7 @@
         "img" : "/images/Blog/google.svg"   
     },
     "MetaBackendDeveloper": {
-        "status" : "inProgress",
+        "status" : "completed",
         "author" : "Meta",
         "url" : "https://www.coursera.org/professional-certificates/meta-back-end-developer",
         "img" : "/images/Blog/meta.svg"
