@@ -431,6 +431,11 @@
             "type" : "Professional Certificate",
             "descriptions" : "Introduction to Front-End Development. \nProgramming with JavaScript. \nVersion Control. \nHTML and CSS in depth. \nReact Basics. \nAdvanced React. \nPrinciples of UI/UX Design. \nFront-End Developer Capstone. \nCoding Interview Preparation."
         },
+        "GoogleCybersecurity": {
+            "name" : "Cybersecurity",
+            "type" : "Professional Certificate",
+            "descriptions" : "Foundations of Cybersecurity, \nPlay It Safe: Manage Security Risks, \nConnect and Protect: Networks and Network Security, \nTools of the Trade: Linux and SQL, \nAssets, Threats, and Vulnerabilities, \nSound the Alarm: Detection and Response, \nAutomate Cybersecurity Tasks with Python, \nPut It to Work: Prepare for Cybersecurity Jobs."
+        },
         "GoogleUXDesign": {
             "name" : "UX Design",
             "type" : "Professional Certificate",

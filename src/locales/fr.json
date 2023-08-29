@@ -431,6 +431,11 @@
             "type" : "Certificat Professionnel",
             "descriptions" : "Introduction au développement Front-End, \nProgrammation avec JavaScript, \nContrôle de version, \nHTML et CSS avancés, \nLes bases de React, \nReact avancé, \nPrincipes de conception UI/UX, \nPierre angulaire du développeur Front-End, \nPréparation à l'entretien d'embauche"
         },
+        "GoogleCybersecurity": {
+            "name" : "Cybersécurité",
+            "type" : "Certificat Professionnel",
+            "descriptions" : "Fondements de la cybersécurité, \nJouer la carte de la sécurité : Gérer les risques de sécurité, \nConnecter et protéger : Réseaux et sécurité des réseaux, \nLes Outils de Travail : Linux et SQL, \nAtouts, menaces et vulnérabilités, \nSonner l'alerte : Détection et réponse, \nAutomatiser les tâches de cybersécurité avec Python, \nMettre en pratique : Se préparer aux emplois dans le domaine de la cybersécurité."
+        },
         "GoogleUXDesign": {
             "name" : "Conception UX",
             "type" : "Certificat Professionnel",
