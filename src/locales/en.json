@@ -139,6 +139,66 @@
                 "Add a favorite system to allow the user to save his favorite jobs."
             ]
         },
+        "GameVerse":{
+            "title": "Game Verse",
+            "subtitle": "Different platforms, one application.",
+            "logo": {
+                "alt": "An owl holding a gaming console controller."
+            },
+            "pictures": {
+                "mockup1": {
+                    "alt": "Collection of games in grid form on a computer screen."
+                },
+                "mockup2": {
+                    "alt": "Collection of games in list form on a smartphone screen."
+                }
+            },
+            "descriptions" : {
+                "1": {
+                    "content": "Game Verse is an Angular PWA application that allows users to save all the games they own across different platforms in one place. \nThe application also allows to search in users' collection using keywords, or by filtering by genre or platform."
+                }
+            },
+            "skills": [
+                "Create a progressive web application", 
+                "Create a dashboard with a search bar and filters",
+                "Create a CRUD to add, modify or delete games",
+                "Implement a service worker to allow the application to work offline",
+                "Implement a database to store the games."
+            ],
+            "improvements": [
+                "Add a rating system to allow users to rate games.",
+                "Add a comment system to allow users to comment on games."
+            ] 
+        },
+        "FlickPick":{
+            "title": "Flick Pick",
+            "subtitle": "Choose, watch, enjoy.",
+            "logo": {
+                "alt": "A popcorn bucket with eyes."
+            },
+            "pictures": {
+                "mockup1": {
+                    "alt": "List of movies matching the user's search on a computer screen."
+                },
+                "mockup2": {
+                    "alt": "Detailed view of a movie displayed on a smartphone screen."
+                }
+            },
+            "descriptions" : {
+                "1": {
+                    "content": "Flick Pick is an Angular PWA application that allows users to search for movies and series and add them to their collection. \nUsers can then create a group with other users and each member of the group is invited to play a game to determine the movie that will be watched by the group."
+                }
+            },
+            "skills": [
+                "Create a progressive web application", 
+                "Create a dashboard with a search bar and filters",
+                "Implement a service worker to allow the application to work offline",
+                "Implement a database to store movies and series."
+            ],
+            "improvements": [
+                "Implement a real-time system (socket) to make the game more dynamic."
+            ] 
+        },
         "PantryPal":{
             "title": "Pantry Pal",
             "subtitle": "All your favorite recipes in one place.",

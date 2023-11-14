@@ -15,6 +15,36 @@
         },
         "tags": "React,  Sass,  NodeJs,  Express,  MongoDB, Chrome Extension"
     },
+    "GameVerse":{
+        "id": "GameVerse",
+        "logo": "/images/Projects/GameVerse/GameVerse-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/images/Projects/GameVerse/mockup-1.png"
+            },
+            "mockup2": {
+                "url": "/images/Projects/GameVerse/mockup-2.png"
+            }
+        },
+        "tags": "Angular, NodeJs, Express, MySQL",
+        "github": "https://github.com/Jerome-Baille/GameVerse-frontend",
+        "demo": "https://game-verse.jerome-baille.fr"
+    },
+    "FlickPick":{
+        "id": "FlickPick",
+        "logo": "/images/Projects/FlickPick/FlickPick-logo.png",
+        "pictures": {
+            "mockup1": {
+                "url": "/images/Projects/FlickPick/mockup-1.png"
+            },
+            "mockup2": {
+                "url": "/images/Projects/FlickPick/mockup-2.png"
+            }
+        },
+        "tags": "Angular, NodeJs, Express, MySQL",
+        "github": "https://github.com/Jerome-Baille/FlickPick-frontend",
+        "demo": "https://flick-pick.jerome-baille.fr"
+    },
     "PantryPal":{
         "id": "PantryPal",
         "logo": "/images/Projects/PantryPal/PantryPal-logo.png",
@@ -30,7 +60,7 @@
             }
         },
         "tags": "Angular, NodeJs, Express, MySQL",
-        "github": "https://github.com/Jerome-Baille/PantryPal",
+        "github": "https://github.com/Jerome-Baille/PantryPal-frontend",
         "demo": "https://pantry-pal.jerome-baille.fr"
     },
     "PhoceaTravel":{

@@ -139,6 +139,66 @@
                 "Add a favorite system to allow the user to save his favorite jobs."
             ]
         },
+        "GameVerse":{
+            "title": "Game Verse",
+            "subtitle": "Différentes plateformes une seule application.",
+            "logo": {
+                "alt": "Une chouette tenant une manette d'une console de jeu."
+            },
+            "pictures": {
+                "mockup1": {
+                    "alt": "Collection de jeux sous forme de grille sur l'écran d'un ordinateur."
+                },
+                "mockup2": {
+                    "alt": "Collection de jeux sous forme de liste sur l'écran de smartphone."
+                }
+            },
+            "descriptions" : {
+                "1": {
+                    "content": "Game Verse est une application PWA Angular qui permet aux utilisateurs de sauvegarder tous les jeux qu'ils possèdent à travers différentes plateformes au même endroit. \nL'application permet également de faire une recherche dans sa collection à l'aide de mot-clés, ou en filtrant par genre ou plateforme."
+                }
+            },
+            "skills": [
+                "Créer une application Web progressive", 
+                "Créer un tableau de bord avec une barre de recherche et des filtres",
+                "Créer un CRUD pour ajouter, modifier ou supprimer les jeux",
+                "Implémenter un service worker pour permettre à l'application de fonctionner hors ligne",
+                "Implémenter une base de données pour stocker les jeux."
+            ],
+            "improvements": [
+                "Ajouter un système de notation pour permettre aux utilisateurs de noter les jeux.",
+                "Ajouter un système de commentaires pour permettre aux utilisateurs de commenter les jeux."
+            ] 
+        },
+        "FlickPick":{
+            "title": "Flick Pick",
+            "subtitle": "Choisissez, regardez, appréciez.",
+            "logo": {
+                "alt": "Un saut de popcorn avec des yeux."
+            },
+            "pictures": {
+                "mockup1": {
+                    "alt": "Liste des films correspondants à la recherche de l'utilisateur sur l'écran d'un ordinateur."
+                },
+                "mockup2": {
+                    "alt": "Vue détaillée d'un film affichée sur l'écran d'un smartphone."
+                }
+            },
+            "descriptions" : {
+                "1": {
+                    "content": "Flick Pick est une application PWA Angular qui permet aux utilisateurs de rechercher des films et des séries et de les ajouter à leur collection. \nLes utilisateurs peuvent ensuite créer un groupe avec d'autres utilisateurs et chaque membre du groupe est invité à jouer à un jeu pour déterminer le film qui sera visionné par le groupe."
+                }
+            },
+            "skills": [
+                "Créer une application Web progressive", 
+                "Créer un tableau de bord avec une barre de recherche et des filtres",
+                "Implémenter un service worker pour permettre à l'application de fonctionner hors ligne",
+                "Implémenter une base de données pour stocker les films et série."
+            ],
+            "improvements": [
+                "Implémenter un système en temps réel (socket) pour rendre le jeu plus dynamique."
+            ] 
+        },
         "PantryPal":{
             "title": "Pantry Pal",
             "subtitle": "Toutes vos recettes préférées au même endroit.",
@@ -150,7 +210,7 @@
                     "alt": "Liste de toutes les recettes de l'utilisateur affichées dans des cartes sur l'écran d'une tablette."
                 },
                 "mockup2": {
-                    "alt": "Vue détaillée d'une recette affichée sur l'écrant d'un smartphone."
+                    "alt": "Vue détaillée d'une recette affichée sur l'écran d'un smartphone."
                 },
                 "mockup3": {
                     "alt": "Liste de courses générée par l'utilisateur et affichée sur un smartphone."
